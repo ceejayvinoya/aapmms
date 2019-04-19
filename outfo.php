@@ -49,7 +49,7 @@
 <div>
 <table>
 <tr>
-<th colspan="4">Incoming Air PM Sensor</th>
+<th colspan="4">Outgoing Air PM Sensor</th>
 </tr>
 <tr class="blue">
 <td>PM 10</td> 
@@ -62,10 +62,10 @@
 
     //LOGIN TO MYSQL DATABASE
 
-    $servername = "localhost";
-    $username = "jeremy";
-    $password = "password";
-    $database = "pmdata";
+    $servername = "ctgplw90pifdso61.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+    $username = "yfxtv65r19dk2qm0";
+    $password = "rkiww4updt427u90";
+    $database = "hu1al3cymer6fwfu";
 
     $conn = new mysqli($servername, $username, $password, $database);
 
