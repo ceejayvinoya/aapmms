@@ -1,46 +1,71 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang=''>
 <head>
-<title>Thesis</title>
-<style>
-table {
-border-collapse: collapse;
-width: 60%;
-color: #588c7e;
-font-family: monospace;
-font-size: 20px;
-text-align: left;
-} 
-th {
-background-color: #588c7e;
-color: white;
-}
-
-tr {
-background-color: #f2f2f2
-}
-</style>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   <title>AAPMMS - DLSUD</title>
 </head>
-<body style = "background: url(https://lh3.googleusercontent.com/-mxFzH7MEQgs/VLras1EBN3I/AAAAAAAAJWM/otq3uDxbwos/w2048-h1152/adwaita-morning.jpg); background-size: 100%;">
+<style>
 
+    table {
+	font: 18px/28px Verdana, Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 640px;
+	}
 
-<p>OUT SENSOR</p>
+    th {
+	padding: 0 0.5em;
+	text-align: left;
+	}
+
+    tr.blue td {
+	border: 3px solid #FB7A31;
+	background: #FFC;
+	}
+
+    td {
+	border: 3px solid #CCC;
+	padding: 0 0.5em;
+    text-align: center;
+	}
+
+</style>
+<body>
+
+<div id='cssmenu'>
+<ul>
+   <li><a href='index.php'><span>Home</span></a></li>
+   <li><a href='info.php'><span>Incoming Air</span></a></li>
+   <li class='active'><a href='#'><span>Outgoing Air</span></a></li>
+   <li><a href='status.php'><span>Status Update</span></a></li>
+   <li class='last'><a href='#', onClick="alert('One of the world’s leading problem is air pollution and there are many forms of pollutant that contribute in air pollution. Particulate matter which is the sum of all solid and liquid particles suspended in air many of which are hazardous. This complex mixture includes both organic and inorganic particles, such as dust, pollen, soot, smoke, and liquid droplets.This website monitors the daily value of particulate matter and with the hardware installed along Aguinaldo Highway, users can see progress of the mitigation through this website.')"><span>About</span></a></li>
+</ul>
+</div>
+
+<div>
 <table>
 <tr>
-<th>PM 10</th> 
-<th>PM 2.5</th>
-<th>Time</th>
-<th>Date</th>
+<th colspan="4">Incoming Air PM Sensor</th>
+</tr>
+<tr class="blue">
+<td>PM 10</td> 
+<td>PM 2.5</td>
+<td>Time</td>
+<td>Date</td>
 </tr>    
 
 <?php
 
     //LOGIN TO MYSQL DATABASE
 
-    $servername = "ctgplw90pifdso61.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-    $username = "yfxtv65r19dk2qm0";
-    $password = "rkiww4updt427u90";
-    $database = "hu1al3cymer6fwfu";
+    $servername = "localhost";
+    $username = "jeremy";
+    $password = "password";
+    $database = "pmdata";
 
     $conn = new mysqli($servername, $username, $password, $database);
 
@@ -50,7 +75,7 @@ background-color: #f2f2f2
 
     //OBTAIN SENSOR DATA FROM THINGSPEAK
 
-    $jsondata = file_get_contents("https://api.thingspeak.com/channels/754899/feeds.json?api_key=PJ2C7CICC344DUVR&timezone=Asia/Hong_Kong&results=10");
+    $jsondata = file_get_contents("https://api.thingspeak.com/channels/743613/feeds.json?api_key=R63HB8RHEB1IUOZF&timezone=Asia/Hong_Kong&results=10");
     $json = json_decode($jsondata, true);
     
     //DECODE AND SORT DATA INTO SENSOR VALUES AND TIMESTAMPS
@@ -102,6 +127,7 @@ background-color: #f2f2f2
     } else { echo "0 results"; }
 
     $conn->close();
-    ?> 
-    </body>
-    </html>
+    ?>
+</div>
+</body>
+</html>
