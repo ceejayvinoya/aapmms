@@ -22,14 +22,14 @@
 </ul>
 </div>
 
-<div style = "position: relative; top: 10px; width: 100%">
+<div style = "position: relative; top: 10px">
 <iframe width="450" height="260" style="position: absolute; border: 2px solid #00008b;" src="https://thingspeak.com/channels/743613/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=C3JY2CR1I5TT22F1&results=60&type=line&update=15"></iframe>
 
 <iframe width="450" height="260" style="position: absolute; left: "460"; border: 2px solid #00008b;" src="https://thingspeak.com/channels/743613/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=C3JY2CR1I5TT22F1&results=60&type=line&update=15"></iframe>
 </div>
 
-<div style = "position: relative; top: 280px; width: 100%">
-<iframe width="450" height="260" style="display: inline-block; position: absolute; border: 2px solid #00008b;" src="https://thingspeak.com/channels/754899/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=GVG0HRXKSNZ1IEFH&results=60&type=line&update=15"></iframe>
+<div style = "position: relative; top: 280px">
+<iframe width="450" height="260" style="position: absolute; border: 2px solid #00008b;" src="https://thingspeak.com/channels/754899/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=GVG0HRXKSNZ1IEFH&results=60&type=line&update=15"></iframe>
 
 <iframe width="450" height="260" style="position: absolute; left: "460"; border: 2px solid #00008b;" src="https://thingspeak.com/channels/754899/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=GVG0HRXKSNZ1IEFH&results=60&type=line&update=15"></iframe>
 </div>
