@@ -52,7 +52,7 @@
 <iframe width="49%" height="260" style="position: absolute; left: 50%; border: 2px solid #00008b;" src="https://thingspeak.com/channels/754899/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=GVG0HRXKSNZ1IEFH&results=60&type=line&update=15"></iframe>
 </div>
 
-<div style = "position: relative; top: 10px; left: 80%">
+<div style = "position: relative; top: 10px; left: 80%; width: 20%">
 <table>
   <tr class="blue">
     <td>Hardware</td>
