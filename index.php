@@ -13,7 +13,8 @@
     table {
 	font: 18px/28px Verdana, Arial, Helvetica, sans-serif;
 	border-collapse: collapse;
-	width: 20%;
+	position: absolute;
+	width: 100%;
 	}
     th {
 	padding: 0 0.5em;
