@@ -24,15 +24,19 @@
 
    
 <div style = "position: relative; top: 10px">
-<iframe width="400" height="230" style="max-width: 100%; border: 2px solid #00008b;" src="https://thingspeak.com/channels/743613/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=C3JY2CR1I5TT22F1&results=60&type=line&update=15"></iframe>
+<iframe width="450" height="260" style="max-width: 100%; border: 2px solid #00008b;" src="https://thingspeak.com/channels/743613/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=C3JY2CR1I5TT22F1&results=60&type=line&update=15"></iframe>
 
-<iframe width="400" height="230" style="max-width: 100%; left: 410px; border: 2px solid #00008b;" src="https://thingspeak.com/channels/743613/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=C3JY2CR1I5TT22F1&results=60&type=line&update=15"></iframe>
+<iframe width="450" height="260" style="max-width: 100%; left: 460px; border: 2px solid #00008b;" src="https://thingspeak.com/channels/743613/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=C3JY2CR1I5TT22F1&results=60&type=line&update=15"></iframe>
+<div style = "background-color: transparent; top: 0px; left: 0px; position: absolute; width: 100%; height: 100%; z-index: 9999">
+</div>
 </div>
    
 <div style = "position: relative; top: 10px">
-<iframe width="400" height="230" style="max-width: 100%; border: 2px solid #00008b;" src="https://thingspeak.com/channels/754899/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=GVG0HRXKSNZ1IEFH&results=60&type=line&update=15"></iframe>
+<iframe width="400" height="260" style="max-width: 100%; border: 2px solid #00008b;" src="https://thingspeak.com/channels/754899/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=GVG0HRXKSNZ1IEFH&results=60&type=line&update=15"></iframe>
 
-<iframe width="400" height="230" style="max-width: 100%; left: 410px; border: 2px solid #00008b;" src="https://thingspeak.com/channels/754899/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=GVG0HRXKSNZ1IEFH&results=60&type=line&update=15"></iframe>
+<iframe width="400" height="260" style="max-width: 100%; left: 460px; border: 2px solid #00008b;" src="https://thingspeak.com/channels/754899/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=GVG0HRXKSNZ1IEFH&results=60&type=line&update=15"></iframe>
+<div style = "background-color: transparent; top: 0px; left: 0px; position: absolute; width: 100%; height: 100%; z-index: 9999">
+</div>
 </div>
 
 </body>
