@@ -97,7 +97,7 @@
     $result=$conn->query($sql);
     if($result->num_rows>0){
         while($row=$result->fetch_assoc()) {
-            echo "<tr><td>" . $row["apm10"]. "</td><td>" . $row["apm25"]. "</td><td>" . $row["time"]. "</td><td>" . $row["date"]."</td></tr>";
+            echo "<tr class='w3-teal'><td>" . $row["apm10"]. "</td><td>" . $row["apm25"]. "</td><td>" . $row["time"]. "</td><td>" . $row["date"]."</td></tr>";
         }
         echo "</table>";
     } else { echo "0 results"; }
