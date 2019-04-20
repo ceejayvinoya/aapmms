@@ -25,6 +25,7 @@
     tr.blue td {
 	border: 3px solid #FB7A31;
 	background: #FFC;
+	max-width: 100%;
 	}
 
     td {
@@ -46,7 +47,7 @@
 </ul>
 </div>
 
-<div style = "max-wid>
+<div>
 <table>
 <tr>
 <th colspan="4">Incoming Air PM Sensor</th>
