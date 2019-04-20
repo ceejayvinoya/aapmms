@@ -51,7 +51,7 @@
 
     //OBTAIN SENSOR DATA FROM THINGSPEAK
 
-    $jsondata = file_get_contents("https://api.thingspeak.com/channels/743613/feeds.json?api_key=R63HB8RHEB1IUOZF&timezone=Asia/Hong_Kong&results=10");
+    $jsondata = file_get_contents("https://api.thingspeak.com/channels/743613/feeds.json?api_key=R63HB8RHEB1IUOZF&timezone=Asia/Hong_Kong&results=30");
     $json = json_decode($jsondata, true);
     
     //DECODE AND SORT DATA INTO SENSOR VALUES AND TIMESTAMPS
