@@ -47,7 +47,7 @@
 </ul>
 </div>
 
-<div>
+<div class="w3-container w3-teal">
 <table>
 <tr>
 <th colspan="4">Incoming Air PM Sensor</th>
