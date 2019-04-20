@@ -12,7 +12,7 @@
 <style>
 
     table {
-	font: 18px/28px Verdana, Arial, Helvetica, sans-serif;
+	font: 14px/24px Verdana, Arial, Helvetica, sans-serif;
 	border-collapse: collapse;
 	width: 640px;
 	}
@@ -25,6 +25,7 @@
     tr.blue td {
 	border: 3px solid #FB7A31;
 	background: #FFC;
+	max-width: 100%;
 	}
 
     td {
@@ -46,7 +47,7 @@
 </ul>
 </div>
 
-<div style = "max-width: 100%">
+<div style = "max-wid>
 <table>
 <tr>
 <th colspan="4">Incoming Air PM Sensor</th>
