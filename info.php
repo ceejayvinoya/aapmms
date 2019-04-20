@@ -22,10 +22,10 @@
 </ul>
 </div>
 
-<div class="w3-container w3-teal">
+<div class="w3-container">
 <table class="w3-table-all">
 <thead>
-<tr>
+<tr class="w3-green">
 <th>PM10</th> 
 <th>PM2.5</th>
 <th>Time</th>
