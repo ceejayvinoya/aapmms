@@ -9,32 +9,6 @@
    <script src="script.js"></script>
    <title>AAPMMS - DLSUD</title>
 </head>
-<style>
-
-    table {
-	font: 16px/26px Verdana, Arial, Helvetica, sans-serif;
-	border-collapse: collapse;
-	width: 320px;
-	}
-
-    th {
-	padding: 0 0.5em;
-	text-align: left;
-	}
-
-    tr.blue td {
-	border: 3px solid #FB7A31;
-	background: #FFC;
-	max-width: 100%;
-	}
-
-    td {
-	border: 3px solid #CCC;
-	padding: 0 0.5em;
-    text-align: center;
-	}
-
-</style>
 <body>
 
 <div id='cssmenu'>
@@ -48,17 +22,15 @@
 </div>
 
 <div class="w3-container w3-teal">
-<table>
+<table class="w3-table-all">
+<thead>
 <tr>
-<th colspan="4">Incoming Air PM Sensor</th>
-</tr>
-<tr class="blue">
-<td>PM10</td> 
-<td>PM2.5</td>
-<td>Time</td>
-<td>Date</td>
+<th>PM10</th> 
+<th>PM2.5</th>
+<th>Time</th>
+<th>Date</th>
 </tr>    
-
+</thead>
 <?php
 
     //LOGIN TO MYSQL DATABASE
