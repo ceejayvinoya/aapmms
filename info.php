@@ -12,7 +12,7 @@
 <style>
 
     table {
-	font: 14px/24px Verdana, Arial, Helvetica, sans-serif;
+	font: 18px/28px Verdana, Arial, Helvetica, sans-serif;
 	border-collapse: collapse;
 	width: 640px;
 	}
