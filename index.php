@@ -26,7 +26,7 @@
 <div class="w3-container w3-teal">
    <h1>Incoming Air PM Sensor</h1>
    </div>
-<div style = "position: relative; top: 10px; text-align: center">
+<div class="w3-container" style = "position: relative; top: 10px; text-align: center">
 <iframe width="340" height="196" style="max-width: 100%; display: inline-block; border: 2px solid #00008b;" src="https://thingspeak.com/channels/743613/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=C3JY2CR1I5TT22F1&results=30&type=line&update=15&height=196&width=340"></iframe>
 
 <iframe width="340" height="196" style="max-width: 100%; display: inline-block; border: 2px solid #00008b;" src="https://thingspeak.com/channels/743613/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=C3JY2CR1I5TT22F1&results=30&type=line&update=15&height=196&width=340"></iframe>
@@ -36,7 +36,7 @@
    <h1>Outgoing Air PM Sensor</h1>
    </div>
    
-<div style = "position: relative; top: 10px; text-align: center">
+<div class="w3-container" style = "position: relative; top: 10px; text-align: center">
 <iframe width="340" height="196" style="max-width: 100%; display: inline-block; border: 2px solid #00008b;" src="https://thingspeak.com/channels/754899/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=GVG0HRXKSNZ1IEFH&results=30&type=line&update=15&height=196&width=340"></iframe>
 
 <iframe width="340" height="196" style="max-width: 100%; display: inline-block; border: 2px solid #00008b;" src="https://thingspeak.com/channels/754899/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=GVG0HRXKSNZ1IEFH&results=30&type=line&update=15&height=196&width=340"></iframe>
