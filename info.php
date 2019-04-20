@@ -25,7 +25,7 @@
    <h1>Incoming Air PM Data</h1>
    </div>
 <div class="w3-container w3-teal">
-<table style="width: 640px; max-width:100%" class="w3-table-all">
+<table style="width: 320px" class="w3-table-all">
 <thead>
 <tr class="w3-green">
 <th>PM10</th> 
