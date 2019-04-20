@@ -25,7 +25,6 @@
     tr.blue td {
 	border: 3px solid #FB7A31;
 	background: #FFC;
-	max-width: 100%;
 	}
 
     td {
