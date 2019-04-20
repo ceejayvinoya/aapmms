@@ -15,7 +15,6 @@
 	font: 18px/28px Verdana, Arial, Helvetica, sans-serif;
 	border-collapse: collapse;
 	width: 640px;
-	max-width: 100%;
 	}
 
     th {
@@ -47,7 +46,7 @@
 </ul>
 </div>
 
-<div>
+<div style = "max-width: 100%">
 <table>
 <tr>
 <th colspan="4">Incoming Air PM Sensor</th>
