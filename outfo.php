@@ -52,8 +52,8 @@
 <th colspan="4">Outgoing Air PM Sensor</th>
 </tr>
 <tr class="blue">
-<td>PM 10</td> 
-<td>PM 2.5</td>
+<td>PM10</td> 
+<td>PM2.5</td>
 <td>Time</td>
 <td>Date</td>
 </tr>    
