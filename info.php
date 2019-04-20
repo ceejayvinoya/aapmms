@@ -15,6 +15,7 @@
 	font: 18px/28px Verdana, Arial, Helvetica, sans-serif;
 	border-collapse: collapse;
 	width: 640px;
+	max-width: 100%;
 	}
 
     th {
