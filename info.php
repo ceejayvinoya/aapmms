@@ -22,7 +22,7 @@
 </ul>
 </div>
 <div class="w3-container w3-teal">
-   <h1>Incoming Air PM Data</h1>
+   <h2>Incoming Air PM Data</h2>
    </div>
 <div class="w3-container w3-teal">
 <table style="width: 320px" class="w3-table-all">
@@ -56,7 +56,7 @@
     
     //DECODE AND SORT DATA INTO SENSOR VALUES AND TIMESTAMPS
 
-    for($x = 0; $x < 10; $x++) {
+    for($x = 0; $x < 30; $x++) {
         $apm10 = $json['feeds'][$x]['field1'];
         $apm25 = $json['feeds'][$x]['field2'];
 
@@ -93,7 +93,7 @@
 
     //DISPLAY TABLE
 
-    $sql="SELECT * FROM insensor ORDER BY id DESC LIMIT 10";
+    $sql="SELECT * FROM insensor ORDER BY id DESC LIMIT 30";
     $result=$conn->query($sql);
     if($result->num_rows>0){
         while($row=$result->fetch_assoc()) {
