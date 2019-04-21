@@ -7,7 +7,7 @@
    <link rel="stylesheet" href="styles.css">
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-   <script src="script.js"></script>
+   <script src="infoscript.js"></script>
    <title>AAPMMS - DLSUD</title>
 </head>
 <body class="w3-teal">
