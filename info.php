@@ -54,9 +54,16 @@
     $jsondata = file_get_contents("https://api.thingspeak.com/channels/743613/feeds.json?api_key=R63HB8RHEB1IUOZF&timezone=Asia/Hong_Kong&results=30");
     $json = json_decode($jsondata, true);
     
+    $test = $json['feeds'][0]['entry_id'];
+    $res = $test;
+    $page = 'https://api.thingspeak.com/channels/743613/feeds.json?api_key=R63HB8RHEB1IUOZF&timezone=Asia/Hong_Kong&results=';
+    $jsondata = file_get_contents($page.$res);
+    $json = json_decode($jsondata, true);
+   
+   
     //DECODE AND SORT DATA INTO SENSOR VALUES AND TIMESTAMPS
 
-    for($x = 0; $x < 30; $x++) {
+    for($x = 0; $x < $res; $x++) {
         $apm10 = $json['feeds'][$x]['field1'];
         $apm25 = $json['feeds'][$x]['field2'];
 
