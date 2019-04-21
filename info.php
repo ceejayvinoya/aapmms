@@ -35,7 +35,7 @@
 </div>
 
    
-<div class="w3-container w3-teal" style = "position: relative; top: 10px;">
+<div id="result" class="w3-teal" style = "position: relative; top: 10px;">
 <table style="width: 320px" class="w3-table-all">
 <thead>
 <tr class="w3-green">
