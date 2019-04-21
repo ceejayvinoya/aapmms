@@ -24,7 +24,7 @@
 
 
 <div class="w3-container w3-teal">
-<table class="w3-table-all">
+<table style="width: 320px" class="w3-table-all">
   <thead>
 	<tr class="w3-green">
     <th>Hardware</td>
@@ -60,12 +60,14 @@
     $timeA = strtotime($date.' '.$time);
     $timeB = strtotime($B);
     if(300 > $timeB - $timeA){
-        echo '<tr "w3-teal"><td>Sensor 2</td><td>Running</td></tr>';
+        echo '<tr class="w3-teal"><td>Sensor 2</td><td>Running</td></tr>';
     } else {
-        echo '<tr "w3-teal"><td>Sensor 2</td><td>Inactive</td></tr>';
+        echo '<tr class="w3-teal"><td>Sensor 2</td><td>Inactive</td></tr>';
     }
 ?>
 </table>
 </div>
+<div style="max-height=100%" class="w3-teal">
+</div?
 </body>
 </html>
