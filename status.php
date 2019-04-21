@@ -10,7 +10,7 @@
    <script src="script.js"></script>
    <title>AAPMMS - DLSUD</title>
 </head>
-<body bgcolor="teal">
+<body class="w3-teal">
 
 <div id='cssmenu'>
 <ul>
