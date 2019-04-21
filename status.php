@@ -9,27 +9,6 @@
    <script src="script.js"></script>
    <title>AAPMMS - DLSUD</title>
 </head>
-<style>
-    table {
-	font: 18px/28px Verdana, Arial, Helvetica, sans-serif;
-	border-collapse: collapse;
-        width: 30%;
-        position: absolute;
-	}
-    th {
-	padding: 0 0.5em;
-	text-align: left;
-	}
-    tr.blue td {
-	border: 3px solid #FB7A31;
-	background: #FFC;
-	}
-    td {
-	border: 3px solid #CCC;
-	padding: 0 0.5em;
-    text-align: center;
-	}
-</style>
 <body>
 
 <div id='cssmenu'>
@@ -43,12 +22,14 @@
 </div>
 
 
-<div style = "position: relative; top: 10px; width: 100%">
-<table>
-  <tr class="blue">
-    <td>Hardware</td>
-    <td>Status</td>
+<div class="w3-container w3-teal">
+<table style="width: 320px" class="w3-table-all">
+  <thead>
+	<tr class="w3-green">
+    <th>Hardware</td>
+    <th>Status</td>
   </tr>
+	</thead>
 <?php
     $jsondata = file_get_contents("https://api.thingspeak.com/channels/743613/feeds.json?api_key=R63HB8RHEB1IUOZF&timezone=Asia/Hong_Kong&results=1");
     $json = json_decode($jsondata, true);
@@ -62,9 +43,9 @@
     $timeA = strtotime($date.' '.$time);
     $timeB = strtotime($B);
     if(300 > $timeB - $timeA){
-        echo '<tr><td>Sensor 1</td><td>Running</td></tr>';
+        echo '<tr class="w3-teal"><td>Sensor 1</td><td>Running</td></tr>';
     } else {
-        echo '<tr><td>Sensor 1</td><td>Inactive</td></tr>';
+        echo '<tr class="w3-teal"><td>Sensor 1</td><td>Inactive</td></tr>';
     }
      $jsondata = file_get_contents("https://api.thingspeak.com/channels/754899/feeds.json?api_key=PJ2C7CICC344DUVR&timezone=Asia/Hong_Kong&results=1");
     $json = json_decode($jsondata, true);
@@ -78,9 +59,9 @@
     $timeA = strtotime($date.' '.$time);
     $timeB = strtotime($B);
     if(300 > $timeB - $timeA){
-        echo '<tr><td>Sensor 2</td><td>Running</td></tr>';
+        echo '<tr "w3-teal"><td>Sensor 2</td><td>Running</td></tr>';
     } else {
-        echo '<tr><td>Sensor 2</td><td>Inactive</td></tr>';
+        echo '<tr "w3-teal"><td>Sensor 2</td><td>Inactive</td></tr>';
     }
 ?>
 </table>
