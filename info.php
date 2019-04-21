@@ -10,7 +10,7 @@
    <script src="script.js"></script>
    <title>AAPMMS - DLSUD</title>
 </head>
-<body>
+<body class="w3-teal">
 
 <div id='cssmenu'>
 <ul>
@@ -25,7 +25,7 @@
    <h2>Incoming Air PM Data</h2>
    </div>
    
-   
+
 <form method="post" class="w3-container">
 <div class="w3-container w3-teal">
 <label>Input Hour:</label><br>
@@ -122,7 +122,7 @@
 
     $conn->close();
     ?>
-   </form>
 </div>
+   </form>
 </body>
 </html>
