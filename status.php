@@ -24,7 +24,7 @@
 
 
 <div class="w3-container w3-teal">
-<table style="width: 320px" class="w3-table-all">
+<table class="w3-table-all">
   <thead>
 	<tr class="w3-green">
     <th>Hardware</td>
