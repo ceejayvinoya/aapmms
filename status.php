@@ -10,7 +10,7 @@
    <script src="script.js"></script>
    <title>AAPMMS - DLSUD</title>
 </head>
-<body>
+<body bgcolor="teal">
 
 <div id='cssmenu'>
 <ul>
@@ -66,8 +66,6 @@
     }
 ?>
 </table>
-</div>
-<div style="max-height=100%" class="w3-teal">
-</div?
+
 </body>
 </html>
