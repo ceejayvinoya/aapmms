@@ -7,10 +7,10 @@
    <link rel="stylesheet" href="styles.css">
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-   <script src="script.js"></script>
+   <script src="outfoscript.js"></script>
    <title>AAPMMS - DLSUD</title>
 </head>
-<body>
+<body class="w3-teal">
 
 <div id='cssmenu'>
 <ul>
@@ -24,7 +24,16 @@
 <div class="w3-container w3-teal">
    <h2>Outgoing Air PM Data</h2>
    </div>
-<div class="w3-container w3-teal">
+   
+   <form method="post" class="w3-container">
+<div class="w3-teal">
+<label>Input Hour:</label><br>
+<input class="w3-input w3-border" type="text" id="time" style="width: 320px">
+<br>		
+<button class="w3-btn w3-aqua" type="button" id="submit">Submit</button>
+</div>
+   
+<div id="result" class="w3-teal" style = "position: relative; top: 10px;">
 <table style="width: 320px" class="w3-table-all">
 <thead>
 <tr class="w3-green">
@@ -89,6 +98,7 @@
     $conn->close();
     ?>
 </div>
+   </form>
 </body>
 </html>
 
