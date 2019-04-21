@@ -24,7 +24,18 @@
 <div class="w3-container w3-teal">
    <h2>Incoming Air PM Data</h2>
    </div>
+   
+   
+<form method="post" class="w3-container">
 <div class="w3-container w3-teal">
+<label>Input Hour:</label><br>
+<input class="w3-input w3-border" type="text" id="time" style="width: 320px">
+<br>		
+<button class="w3-btn w3-aqua" type="button" id="submit">Submit</button>
+</div>
+
+   
+<div class="w3-container w3-teal" style = "position: relative; top: 10px;">
 <table style="width: 320px" class="w3-table-all">
 <thead>
 <tr class="w3-green">
@@ -111,6 +122,7 @@
 
     $conn->close();
     ?>
+   </form>
 </div>
 </body>
 </html>
