@@ -69,7 +69,7 @@
 
 
     //DECODE AND SORT DATA INTO SENSOR VALUES AND TIMESTAMPS
-    for($x = 0; $x < 30; $x++) {
+    for($x = 0; $x < $res; $x++) {
         $bpm10 = $json['feeds'][$x]['field1'];
         $bpm25 = $json['feeds'][$x]['field2'];
         $entry_id = $json['feeds'][$x]['entry_id'];
@@ -81,7 +81,7 @@
         $timefix = explode("+",$timeset);
         $time = $timefix[0];
         //CHECK IF LATEST DATA IS ALREADY ON DATABASE
-        $sql = "SELECT * FROM insensor WHERE time = '$time' AND date = '$date'";
+        $sql = "SELECT * FROM outsensor WHERE time = '$time' AND date = '$date'";
         $result=$conn->query($sql);
         if($result->num_rows>0){
         
