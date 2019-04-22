@@ -28,10 +28,10 @@
    <form method="post" class="w3-container">
 <div class="w3-teal">
 <label>Input Hour:</label><br>
-<input class="w3-input w3-border" type="text" id="time" style="width: 320px">
+<input class="w3-input w3-border" type="text" id="time" style="width: 320px" placeholder="0 to 23, Military Time">
 <br>
 <label>Input Date:</label><br>
-<input class="w3-input w3-border" type="text" id="date" style="width: 320px" value="yyyy-mm-dd">
+<input class="w3-input w3-border" type="text" id="date" style="width: 320px" placeholder="yyyy-mm-dd">
 <br>
 <button class="w3-btn w3-aqua" type="button" id="submit">Submit</button>
 </div>
