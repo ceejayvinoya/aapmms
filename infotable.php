@@ -7,7 +7,7 @@
 	}
      
     	$time = $_POST["time"];
-    	//$wpm = $_POST["wpm"];
+    	$date = $_POST["date"];
    
         $num = strlen((string)$time);
 
@@ -15,7 +15,7 @@
           $time = "0".$time;
         }
 
-    	$query = mysqli_query($conn, "SELECT * FROM insensor WHERE time LIKE '$time:%'") or die(mysqli_error());
+    	$query = mysqli_query($conn, "SELECT * FROM insensor WHERE time LIKE '$time:%' AND date LIKE '$date'") or die(mysqli_error());
     	$row = mysqli_num_rows($query);
         echo "<table style='width: 320px' class='w3-table-all'><tr class='w3-green'><th>PM10</th><th>PM2.5</th><th>Time</th></tr>";
         if($query->num_rows>0){    	
