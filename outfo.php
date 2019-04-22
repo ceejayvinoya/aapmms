@@ -57,7 +57,7 @@
         die("</table> Connection Failed: " . $conn->connect_error);
     }
     //OBTAIN SENSOR DATA FROM THINGSPEAK
-    $jsondata = file_get_contents("https://api.thingspeak.com/channels/754899/feeds.json?api_key=PJ2C7CICC344DUVR&timezone=Asia/Hong_Kong&results=30");
+    $jsondata = file_get_contents("https://api.thingspeak.com/channels/754899/feeds.json?api_key=PJ2C7CICC344DUVR&timezone=Asia/Hong_Kong&results=1");
     $json = json_decode($jsondata, true);
     
     $test = $json['feeds'][0]['entry_id'];
