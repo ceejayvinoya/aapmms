@@ -62,7 +62,7 @@
     
     $test = $json['feeds'][0]['entry_id'];
     $res = $test;
-    $page = 'https://api.thingspeak.com/channels/743613/feeds.json?api_key=R63HB8RHEB1IUOZF&timezone=Asia/Hong_Kong&results=';
+    $page = 'https://api.thingspeak.com/channels/754899/feeds.json?api_key=PJ2C7CICC344DUVR&timezone=Asia/Hong_Kong&results=';
     $jsondata = file_get_contents($page.$res);
     $json = json_decode($jsondata, true);
    
