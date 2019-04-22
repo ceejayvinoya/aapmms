@@ -22,7 +22,9 @@
 </ul>
 </div>
 
-
+<div class="w3-container w3-teal">
+	<h2>Status Update</h2>
+	</div>
 <div class="w3-container w3-teal">
 <table style="width: 320px" class="w3-table-all">
   <thead>
