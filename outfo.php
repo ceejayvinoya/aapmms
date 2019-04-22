@@ -60,10 +60,20 @@
     $jsondata = file_get_contents("https://api.thingspeak.com/channels/754899/feeds.json?api_key=PJ2C7CICC344DUVR&timezone=Asia/Hong_Kong&results=30");
     $json = json_decode($jsondata, true);
     
+    $test = $json['feeds'][0]['entry_id'];
+    $res = $test;
+    $page = 'https://api.thingspeak.com/channels/743613/feeds.json?api_key=R63HB8RHEB1IUOZF&timezone=Asia/Hong_Kong&results=';
+    $jsondata = file_get_contents($page.$res);
+    $json = json_decode($jsondata, true);
+   
+
+
     //DECODE AND SORT DATA INTO SENSOR VALUES AND TIMESTAMPS
     for($x = 0; $x < 30; $x++) {
         $bpm10 = $json['feeds'][$x]['field1'];
         $bpm25 = $json['feeds'][$x]['field2'];
+        $entry_id = $json['feeds'][$x]['entry_id'];
+        
         $timestamp = $json['feeds'][$x]['created_at'];
         $divider = explode("T",$timestamp);
         $date = $divider[0];
@@ -79,9 +89,9 @@
         } else {
             //ELSE IF DATA IS NOT UPDATED, INSERT UPDATED DATA TO DATABASE
           
-                $sql="INSERT INTO outsensor (bpm10, bpm25, time, date)
+                $sql="INSERT INTO outsensor (bpm10, bpm25, time, date, entry_id)
                 VALUES
-                ('$bpm10','$bpm25','$time','$date')";
+                ('$bpm10','$bpm25','$time','$date','$entry_id')";
     
                 if($conn->query($sql)!==TRUE){
                     echo "</table> Error: " . $sql . "<br>" . $conn->error;
