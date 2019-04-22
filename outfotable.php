@@ -9,6 +9,8 @@
     	$time = $_POST["time"];
     	//$wpm = $_POST["wpm"];
    
+        $num =strlen((string)$time);
+
         if($num == 1){
           $time = "0".$time;
         }
