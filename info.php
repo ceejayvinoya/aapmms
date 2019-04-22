@@ -80,6 +80,7 @@
     for($x = 0; $x < $res; $x++) {
         $apm10 = $json['feeds'][$x]['field1'];
         $apm25 = $json['feeds'][$x]['field2'];
+        $entry_id = $json['feeds'][$x]['entry_id'];
 
         $timestamp = $json['feeds'][$x]['created_at'];
 
@@ -101,9 +102,9 @@
         } else {
             //ELSE IF DATA IS NOT UPDATED, INSERT UPDATED DATA TO DATABASE
           
-                $sql="INSERT INTO insensor (apm10, apm25, time, date)
+                $sql="INSERT INTO insensor (apm10, apm25, time, date, entry_id)
                 VALUES
-                ('$apm10','$apm25','$time','$date')";
+                ('$apm10','$apm25','$time','$date','$entry_id')";
     
                 if($conn->query($sql)!==TRUE){
                     echo "</table> Error: " . $sql . "<br>" . $conn->error;
