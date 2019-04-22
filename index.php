@@ -11,7 +11,7 @@
    <title>AAPMMS - DLSUD</title>
 </head>
 
-<body>
+<body class="w3-teal">
 
 <div id='cssmenu'>
 <ul>
