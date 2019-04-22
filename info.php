@@ -30,7 +30,10 @@
 <div class="w3-teal">
 <label>Input Hour:</label><br>
 <input class="w3-input w3-border" type="text" id="time" style="width: 320px">
-<br>		
+<br>
+<label>Input Date:</label><br>
+<input class="w3-input w3-border" type="text" id="date" style="width: 320px" value="yyyy-mm-dd">
+<br>	
 <button class="w3-btn w3-aqua" type="button" id="submit">Submit</button>
 </div>
 
