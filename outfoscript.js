@@ -1,7 +1,7 @@
     $(document).ready(function(){
     	$('#submit').on('click', function(){
             $("#result").html("");
-    		if($('#time').val() == ""){			
+    		if($('#time').val() == "" || $('#date').val() == ""){			
     			var warning = $("<div>Please complete the required field!</div>");
     			$('#result').append(warning);
     			setTimeout(function(){
@@ -13,7 +13,7 @@
     				type: 'POST',
     				url: 'outfotable.php',
     				data: {
-    					//age:$('#age').val(),
+    					date:$('#date').val(),
     					time:$('#time').val()
     				},
                     dataType: 'text',
