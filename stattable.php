@@ -3,7 +3,7 @@ echo '<table style="width: 320px" class="w3-table-all">';
 echo '<tr class="w3-green">';
 echo '<td>Hardware</td>';
 echo '<td>Status</td></tr>';
-    $jsondata = file_get_contents("https://api.thingspeak.com/channels/743613/feeds.json?api_key=R63HB8RHEB1IUOZF&timezone=Asia/Hong_Kong&results=1");
+    $jsondata = file_get_contents("https://api.thingspeak.com/channels/743613/feeds.json?api_key=R63HB8RHEB1IUOZF&results=1");
     $json = json_decode($jsondata, true);
     $timestamp = $json['feeds'][0]['created_at'];
     $divider = explode("T",$timestamp);
@@ -19,7 +19,7 @@ echo '<td>Status</td></tr>';
     } else {
         echo '<tr class="w3-teal"><td>Sensor 1</td><td>Inactive</td></tr>';
     }
-     $jsondata = file_get_contents("https://api.thingspeak.com/channels/754899/feeds.json?api_key=PJ2C7CICC344DUVR&timezone=Asia/Hong_Kong&results=1");
+     $jsondata = file_get_contents("https://api.thingspeak.com/channels/754899/feeds.json?api_key=PJ2C7CICC344DUVR&results=1");
     $json = json_decode($jsondata, true);
     $timestamp = $json['feeds'][0]['created_at'];
     $divider = explode("T",$timestamp);
