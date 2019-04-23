@@ -1,5 +1,5 @@
 <?php
-    $jsondata = file_get_contents("https://api.thingspeak.com/channels/743613/feeds.json?api_key=R63HB8RHEB1IUOZF&timezone=Asia/Hong_Kong&results=1");
+    $jsondata = file_get_contents("https://api.thingspeak.com/channels/754899/feeds.json?api_key=PJ2C7CICC344DUVR&timezone=Asia/Hong_Kong&results=1");
     $json = json_decode($jsondata, true);
     $timestamp = $json['feeds'][0]['created_at'];
     $divider = explode("T",$timestamp);
