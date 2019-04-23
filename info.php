@@ -35,10 +35,11 @@
 <input class="w3-input w3-border" type="text" id="date" style="width: 320px" placeholder="yyyy-mm-dd">
 <br>	
 <button class="w3-btn w3-aqua" type="button" id="submit">Submit</button>
+<button class="w3-btn w3-aqua" type="button" id="refresh">Refresh</button>
 </div>
 </form>
    
-<div id="result" class="w3-teal" style = "position: relative; top: 10px;">
+<div id="result" class="w3-container w3-teal" style = "position: relative; top: 10px;">
 <table style="width: 320px" class="w3-table-all">
 <thead>
 <tr class="w3-green">
