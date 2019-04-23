@@ -23,6 +23,7 @@
 </div>
 <div class="w3-container w3-teal">
 	<h2>Status Update</h2>
+	<p>If a sensor has not sent data for the last 5 minutes, it will be marked inactive.</p>
 </div>
 <div>
 <form method="get" class="w3-container">
