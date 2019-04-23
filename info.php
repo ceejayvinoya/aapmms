@@ -35,13 +35,14 @@
 <label>Input Date:</label><br>
 <input class="w3-input w3-border" type="text" id="date" style="width: 320px" placeholder="yyyy-mm-dd">
 <br>	
+   
 <button class="w3-btn w3-aqua" type="button" id="submit">Submit</button>
 
 </div>
 </form>
    
    <form method="get" class="w3-container">
-   <button class="w3-btn w3-aqua" type="button" id="refresh">Refresh</button>
+   <button class="w3-btn w3-aqua" type="button" id="refresh" style="top: 20px">Refresh</button>
    </form>
    
 <div id="result" class="w3-container w3-teal" style = "position: relative; top: 10px;">
