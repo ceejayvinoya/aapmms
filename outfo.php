@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
    <script src="outfoscript.js"></script>
+   <script src="outforefresh.js"></script>
    <title>AAPMMS - DLSUD</title>
 </head>
 <body class="w3-teal">
@@ -36,6 +37,12 @@
 <button class="w3-btn w3-aqua" type="button" id="submit">Submit</button>
 </div>
    
+      <div class="w3-container" style="position: relative; top: 10px">
+   <form method="get">
+   <button class="w3-btn w3-aqua" type="button" id="refresh">Refresh</button>
+   </form>
+</div>
+      
 <div id="result" class="w3-teal" style = "position: relative; top: 10px;">
 <table style="width: 320px" class="w3-table-all">
 <thead>
