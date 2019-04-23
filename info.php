@@ -41,10 +41,12 @@
 </div>
 </form>
    
+   <div style="top: 20px">
    <form method="get" class="w3-container">
-   <button class="w3-btn w3-aqua" type="button" id="refresh" style="top: 20px">Refresh</button>
+   <button class="w3-btn w3-aqua" type="button" id="refresh">Refresh</button>
    </form>
-   
+   </div>
+      
 <div id="result" class="w3-container w3-teal" style = "position: relative; top: 10px;">
 <table style="width: 320px" class="w3-table-all">
 <thead>
