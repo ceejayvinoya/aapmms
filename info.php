@@ -41,8 +41,8 @@
 </div>
 </form>
    
-   <div style="position: relative; top: 20px">
-   <form method="get" class="w3-container">
+   <div sclass="w3-container">
+   <form method="get">
    <button class="w3-btn w3-aqua" type="button" id="refresh">Refresh</button>
    </form>
    </div>
