@@ -10,6 +10,7 @@
    <script src="statscript.js"></script>
    <title>AAPMMS - DLSUD</title>
 </head>
+
 <body class="w3-teal">
 
 <div id='cssmenu'>
@@ -21,21 +22,16 @@
    <li class='last'><a href='#', onClick="alert('One of the world’s leading problem is air pollution and there are many forms of pollutant that contribute in air pollution. Particulate matter which is the sum of all solid and liquid particles suspended in air many of which are hazardous. This complex mixture includes both organic and inorganic particles, such as dust, pollen, soot, smoke, and liquid droplets.This website monitors the daily value of particulate matter and with the hardware installed along Aguinaldo Highway, users can see progress of the mitigation through this website.')"><span>About</span></a></li>
 </ul>
 </div>
-<div class="w3-container w3-teal">
-	<h2>Status Update</h2>
-	<p>If a sensor has not sent data for the last 5 minutes, it will be marked inactive.</p>
-</div>
+
 <div>
 <form method="get" class="w3-container">
 
 <div id="statupdate" class="w3-container w3-teal" style = "position: relative; top: 10px; width: 100%">
 <table style="width: 320px" class="w3-table-all">
-  <thead>
-	<tr class="w3-green">
-    <th>Hardware</td>
-    <th>Status</td>
+  <tr class="w3-green">
+    <td>Hardware</td>
+    <td>Status</td>
   </tr>
-	</thead>
 <?php
     $jsondata = file_get_contents("https://api.thingspeak.com/channels/743613/feeds.json?api_key=R63HB8RHEB1IUOZF&timezone=Asia/Hong_Kong&results=1");
     $json = json_decode($jsondata, true);
