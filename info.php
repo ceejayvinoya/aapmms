@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
    <script src="infoscript.js"></script>
+   <script src="inforefresh.js"></script>
    <title>AAPMMS - DLSUD</title>
 </head>
 <body class="w3-teal">
@@ -35,9 +36,13 @@
 <input class="w3-input w3-border" type="text" id="date" style="width: 320px" placeholder="yyyy-mm-dd">
 <br>	
 <button class="w3-btn w3-aqua" type="button" id="submit">Submit</button>
-<button class="w3-btn w3-aqua" type="button" id="refresh">Refresh</button>
+
 </div>
 </form>
+   
+   <form method="post">
+   <button class="w3-btn w3-aqua" type="button" id="refresh">Refresh</button>
+   </form>
    
 <div id="result" class="w3-container w3-teal" style = "position: relative; top: 10px;">
 <table style="width: 320px" class="w3-table-all">
