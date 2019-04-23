@@ -16,6 +16,6 @@
         //if($row > 0){
     		//echo "success";
     	}else{
-    		echo "<div class='w3-teal'><p>No data available for that time/date</p><div>";
+    		echo "<div class='w3-teal'><p>No data available for that time/date</p></div>";
     	}
     ?>
