@@ -41,7 +41,7 @@
 </div>
 </form>
    
-   <div sclass="w3-container">
+   <div class="w3-container">
    <form method="get">
    <button class="w3-btn w3-aqua" type="button" id="refresh">Refresh</button>
    </form>
