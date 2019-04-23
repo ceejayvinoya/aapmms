@@ -17,7 +17,7 @@
 
     	$query = mysqli_query($conn, "SELECT * FROM insensor WHERE time LIKE '$time:%' AND date LIKE '$date'") or die(mysqli_error());
     	$row = mysqli_num_rows($query);
-        echo "<table style='width: 320px' class='w3-table-all'><tr class='w3-green'><th>PM10</th><th>PM2.5</th><th>Time</th><th>Date</th></tr>";
+        echo "<table style='width: 320px; position: relative; top: 10px' class='w3-table-all'><tr class='w3-green'><th>PM10</th><th>PM2.5</th><th>Time</th><th>Date</th></tr>";
         if($query->num_rows>0){    	
             while($row=$query->fetch_assoc()) {
             echo "<tr class='w3-teal'><td>" . $row["apm10"]. "</td><td>" . $row["apm25"]. "</td><td>" . $row["time"]. "</td><td>" . $row["date"]. "</td></tr>";
