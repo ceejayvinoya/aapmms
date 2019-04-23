@@ -7,7 +7,7 @@
    <link rel="stylesheet" href="styles.css">
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-   <script src="script.js"></script>
+   <script src="statscript.js"></script>
    <title>AAPMMS - DLSUD</title>
 </head>
 <body class="w3-teal">
@@ -21,11 +21,13 @@
    <li class='last'><a href='#', onClick="alert('One of the world’s leading problem is air pollution and there are many forms of pollutant that contribute in air pollution. Particulate matter which is the sum of all solid and liquid particles suspended in air many of which are hazardous. This complex mixture includes both organic and inorganic particles, such as dust, pollen, soot, smoke, and liquid droplets.This website monitors the daily value of particulate matter and with the hardware installed along Aguinaldo Highway, users can see progress of the mitigation through this website.')"><span>About</span></a></li>
 </ul>
 </div>
-
 <div class="w3-container w3-teal">
 	<h2>Status Update</h2>
-	</div>
-<div class="w3-container w3-teal">
+</div>
+<div>
+<form method="get" class="w3-container">
+
+<div id="statupdate" class="w3-container w3-teal" style = "position: relative; top: 10px; width: 100%">
 <table style="width: 320px" class="w3-table-all">
   <thead>
 	<tr class="w3-green">
@@ -68,6 +70,11 @@
     }
 ?>
 </table>
-
+</div>
+<div class="w3-container w3-teal" style = "position: relative; top: 30px;">
+<button class="w3-btn w3-aqua" type="button" id="refresh">Refresh</button>
+</div>
+</form>
+</div>
 </body>
 </html>
