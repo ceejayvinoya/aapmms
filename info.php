@@ -36,7 +36,7 @@
 <br>	
 <button class="w3-btn w3-aqua" type="button" id="submit">Submit</button>
 </div>
-
+</form>
    
 <div id="result" class="w3-teal" style = "position: relative; top: 10px;">
 <table style="width: 320px" class="w3-table-all">
@@ -127,6 +127,6 @@
     $conn->close();
     ?>
 </div>
-   </form>
+  
 </body>
 </html>
