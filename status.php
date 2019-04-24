@@ -23,10 +23,8 @@
 </ul>
 </div>
 
-<div>
-<form method="get" class="w3-container">
 
-<div id="statupdate" class="w3-container w3-teal" style = "position: relative; top: 10px; width: 100%">
+<div id="statupdate" class="w3-teal" style = "position: relative; top: 10px; width: 100%">
 <table style="width: 320px" class="w3-table-all">
   <tr class="w3-green">
     <td>Hardware</td>
@@ -68,10 +66,11 @@
 ?>
 </table>
 </div>
+<form method="get" class="w3-container">
 <div class="w3-container w3-teal" style = "position: relative; top: 30px;">
 <button class="w3-btn w3-aqua" type="button" id="refresh">Refresh</button>
 </div>
 </form>
-</div>
+
 </body>
 </html>
