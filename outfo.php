@@ -20,7 +20,7 @@
          <li><a href='info.php'><span>Incoming Air</span></a></li>
          <li class='active'><a href='#'><span>Outgoing Air</span></a></li>
          <li><a href='status.php'><span>Status Update</span></a></li>
-         <li class='last'><a href='#', onClick="alert('One of the world’s leading problem is air pollution and there are many forms of pollutant that contribute in air pollution. Particulate matter which is the sum of all solid and liquid particles suspended in air many of which are hazardous. This complex mixture includes both organic and inorganic particles, such as dust, pollen, soot, smoke, and liquid droplets.This website monitors the daily value of particulate matter and with the hardware installed along Aguinaldo Highway, users can see progress of the mitigation through this website.')"><span>About</span></a></li>
+         <li class='last'><a href='about.html'><span>About</span></a></li>
       </ul>
    </div>
    <div class="w3-container w3-teal">
