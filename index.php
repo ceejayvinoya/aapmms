@@ -19,7 +19,7 @@
    <li><a href='info.php'><span>Incoming Air</span></a></li>
    <li><a href='outfo.php'><span>Outgoing Air</span></a></li>
    <li><a href='status.php'><span>Status Update</span></a></li>
-   <li class='last'><a href='#', onClick="alert('One of the world’s leading problems is air pollution and there are many forms of pollutants that contribute to air pollution. Particulate matter is the sum of all solid and liquid particles suspended in air, many of which are hazardous. This complex mixture includes both organic and inorganic particles, such as dust, pollen, soot, smoke, and liquid droplets.This website monitors the daily value of particulate matter and with the hardware installed, users can see air pollution data as well as filtered air data through this website.')"><span>About</span></a></li>
+   <li class='last'><a href='about.html'><span>About</span></a></li>
 </ul>
 </div>
 
