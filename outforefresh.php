@@ -7,7 +7,7 @@
     	
     	$query = mysqli_query($conn, "SELECT * FROM outsensor ORDER BY entry_id DESC LIMIT 30") or die(mysqli_error());
     	$row = mysqli_num_rows($query);
-        echo "<table style='width: 320px; top: 10px' class='w3-table-all'><tr class='w3-green'><th>PM10</th><th>PM2.5</th><th>Time</th><th>Date</th></tr>";
+        echo "<table style='width: 320px; position: relative; top: 10px' class='w3-table-all'><tr class='w3-green'><th>PM10</th><th>PM2.5</th><th>Time</th><th>Date</th></tr>";
         if($query->num_rows>0){    	
             while($row=$query->fetch_assoc()) {
             echo "<tr class='w3-teal'><td>" . $row["bpm10"]. "</td><td>" . $row["bpm25"]. "</td><td>" . $row["time"]. "</td><td>" . $row["date"]. "</td></tr>";
