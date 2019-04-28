@@ -25,6 +25,8 @@
    </div>
    <div class="w3-container w3-teal">
       <h2>Outgoing Air PM Data</h2>
+      <p>This page logs all data gathered by the Outgoing Air PM sensor within the past hour. You can also get the data from a specific date and hour using the fields below.</p>
+
    </div>
    
    <form method="post" class="w3-container">
