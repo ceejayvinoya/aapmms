@@ -24,6 +24,7 @@
 </div>
 <div class="w3-container w3-teal">
    <h2>Incoming Air PM Data</h2>
+   <p>This page logs all data gathered by the Incoming Air PM sensor within the past hour. You can also get the data from a specific date and hour using the fields below.</p>
    </div>
    
 
