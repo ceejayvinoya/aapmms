@@ -42,12 +42,12 @@
 
 </form>
    
-   <form method="get" class="w3-container" style="position: relative; top: 20px">
+   <form method="get" class="w3-container" style="position: relative; top: 10px">
    <button class="w3-btn w3-aqua" type="button" id="refresh">Refresh</button>
    </form>
 
       
-<div id="result" class="w3-container w3-teal" style = "position: relative; top: 10px;">
+<div id="result" class="w3-container">
 <table style="width: 320px; position: relative; top: 10px;" class="w3-table-all" >
 <thead>
 <tr class="w3-green">
