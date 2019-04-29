@@ -48,7 +48,7 @@
 
       
 <div id="result" class="w3-container">
-<table style="width: 320px; position: relative; top: 10px;" class="w3-table-all" >
+<table style="width: 320px; position: relative; top: 20px;" class="w3-table-all" >
 <thead>
 <tr class="w3-green">
 <th>PM10</th> 
