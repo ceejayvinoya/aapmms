@@ -26,15 +26,13 @@
 <div class="w3-container w3-teal">
    <h2>Incoming Air PM Data</h2>
    <p>This page logs all data gathered by the Incoming Air PM sensor within the past hour. You can also get the data from a specific date and hour using the fields below.</p>
-   </div>
+   </div><!--
    
+--><form method="post" class="w3-container"><!--
 
-<form method="post" class="w3-container">
-
-<label>Input Hour:</label><br>
-<input class="w3-input w3-border" type="text" id="time" style="width: 320px" placeholder="0 to 23, Military Time">
-<br>
-<label>Input Date:</label><br>
+--><label>Input Hour:</label><br><!--
+--><input class="w3-input w3-border" type="text" id="time" style="width: 320px" placeholder="0 to 23, Military Time"><!--
+--><br><label>Input Date:</label><br>
 <input class="w3-input w3-border" type="text" id="date" style="width: 320px" placeholder="yyyy-mm-dd">
 <br>	
    
@@ -48,7 +46,7 @@
 
       
 <div id="result" class="w3-container" style="position: relative; top: 20px">
-<table style="display: inline-block" class="w3-table-all" >
+<table style="width: 320px" class="w3-table-all" >
 <thead>
 <tr class="w3-green">
 <th>PM10</th> 
@@ -136,7 +134,7 @@
     $conn->close();
     ?>
 
-<table style="display: inline-block" class="w3-table-all" >
+<table style="width: 320px" class="w3-table-all" >
 <thead>
 <tr class="w3-green">
 <th>PM10</th> 
