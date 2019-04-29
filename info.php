@@ -42,7 +42,7 @@
 
 </form>
    
-   <form method="get" class="w3-container" style="position: absolute; left: 160px">
+   <form method="get" class="w3-container" style="position: relative; top: 20px">
    <button class="w3-btn w3-aqua" type="button" id="refresh">Refresh</button>
    </form>
 
