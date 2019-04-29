@@ -22,6 +22,7 @@
    <li class='last'><a href='about.html'><span>About</span></a></li>
    </ul>
 </div>
+   
 <div class="w3-container w3-teal">
    <h2>Incoming Air PM Data</h2>
    <p>This page logs all data gathered by the Incoming Air PM sensor within the past hour. You can also get the data from a specific date and hour using the fields below.</p>
@@ -29,7 +30,7 @@
    
 
 <form method="post" class="w3-container">
-<div class="w3-teal">
+
 <label>Input Hour:</label><br>
 <input class="w3-input w3-border" type="text" id="time" style="width: 320px" placeholder="0 to 23, Military Time">
 <br>
@@ -39,7 +40,6 @@
    
 <button class="w3-btn w3-aqua" type="button" id="submit">Submit</button>
 
-</div>
 </form>
    
    <div class="w3-container" style="position: relative; top: 10px">
