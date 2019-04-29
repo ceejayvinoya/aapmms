@@ -47,8 +47,8 @@
    </form>
 
       
-<div id="result" class="w3-container" style="position: relative">
-<table style="width: 340px; max-width: 100%; top: 50px; display: inline-block" class="w3-table-all" >
+<div id="result" class="w3-container" style="position: relative; top: 20px">
+<table style="width: 320px; max-width: 320px; display: inline-block" class="w3-table-all" >
 <thead>
 <tr class="w3-green">
 <th>PM10</th> 
@@ -136,7 +136,7 @@
     $conn->close();
     ?>
 
-<table style="width: 340px; max-width: 100%; top: 50px; display: inline-block" class="w3-table-all" >
+<table style="width: 320px; max-width: 320px; display: inline-block" class="w3-table-all" >
 <thead>
 <tr class="w3-green">
 <th>PM10</th> 
