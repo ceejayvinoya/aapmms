@@ -48,7 +48,7 @@
 
       
 <div id="result" class="w3-container" style="position: relative; top: 20px">
-<table style="width: 350px; display: inline-block; table-layout: fixed" class="w3-table-all" >
+<table style="width: 340px; display: inline-block; table-layout: fixed" class="w3-table-all" >
 <thead>
 <tr class="w3-green">
 <th>PM10</th> 
@@ -136,7 +136,7 @@
     $conn->close();
     ?>
 
-<table style="width: 350px; display: inline-block; table-layout: fixed" class="w3-table-all" >
+<table style="width: 340px; display: inline-block; table-layout: fixed" class="w3-table-all" >
 <thead>
 <tr class="w3-green">
 <th>PM10</th> 
