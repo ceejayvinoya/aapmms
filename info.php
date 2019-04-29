@@ -136,7 +136,7 @@
     $conn->close();
     ?>
 
-<table class="w3-table-all" >
+<table style="display: inline-block" class="w3-table-all" >
 <thead>
 <tr class="w3-green">
 <th>PM10</th> 
