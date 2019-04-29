@@ -38,13 +38,13 @@
    </div>
    
    <div class="w3-container" style="position: relative">
-   <form method="post">
-<button style="display: inline-block" class="w3-btn w3-aqua" type="button" id="submit">Submit</button>
+   <form method="post" style="display: inline-block">
+<button class="w3-btn w3-aqua" type="button" id="submit">Submit</button>
 
 </form>
    
-   <form method="get">
-   <button style="display: inline-block" class="w3-btn w3-aqua" type="button" id="refresh">Refresh</button>
+   <form method="get" style="display: inline-block">
+   <button class="w3-btn w3-aqua" type="button" id="refresh">Refresh</button>
    </form>
    </div>
       
