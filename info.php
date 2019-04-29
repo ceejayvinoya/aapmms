@@ -134,7 +134,7 @@
     $conn->close();
     ?>
 
-<table style="width: 320px; position: absolute; float: right" class="w3-table-all" >
+<table style="width: 320px; position: absolute; left: 330px" class="w3-table-all" >
 <thead>
 <tr class="w3-green">
 <th>PM10</th> 
