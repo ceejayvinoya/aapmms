@@ -29,22 +29,24 @@
    </div>
    
 
-
+<div class="w3-container">
 <label>Input Hour:</label><br>
 <input class="w3-input w3-border" type="text" id="time" style="width: 320px" placeholder="0 to 23, Military Time">
 <br><label>Input Date:</label><br>
 <input class="w3-input w3-border" type="text" id="date" style="width: 320px" placeholder="yyyy-mm-dd">
 <br>	
+   </div>
    
+   <div class="w3-container" style="position: relative">
    <form method="post">
-<button class="w3-btn w3-aqua" type="button" id="submit">Submit</button>
+<button style="display: inline-block" class="w3-btn w3-aqua" type="button" id="submit">Submit</button>
 
 </form>
    
-   <form method="get" class="w3-container" style="position: absolute; top: 100px; left ">
-   <button class="w3-btn w3-aqua" type="button" id="refresh">Refresh</button>
+   <form method="get">
+   <button style="display: inline-block" class="w3-btn w3-aqua" type="button" id="refresh">Refresh</button>
    </form>
-
+   </div>
       
 <div id="result" class="w3-container" style="position: relative; top: 20px">
 <table width="320" style="max-width: 320px; display: inline-table; border: 2px solid #00008b" class="w3-table-all" >
