@@ -176,8 +176,8 @@
     //DECODE AND SORT DATA INTO SENSOR VALUES AND TIMESTAMPS
 
     for($x = 0; $x < $res; $x++) {
-        $apm10 = $json['feeds'][$x]['field1'];
-        $apm25 = $json['feeds'][$x]['field2'];
+        $cpm10 = $json['feeds'][$x]['field1'];
+        $cpm25 = $json['feeds'][$x]['field2'];
         $entry_id = $json['feeds'][$x]['entry_id'];
 
         $timestamp = $json['feeds'][$x]['created_at'];
@@ -200,9 +200,9 @@
         } else {
             //ELSE IF DATA IS NOT UPDATED, INSERT UPDATED DATA TO DATABASE
           
-                $sql="INSERT INTO insensortwo (apm10, apm25, time, date, entry_id)
+                $sql="INSERT INTO insensortwo (cpm10, cpm25, time, date, entry_id)
                 VALUES
-                ('$apm10','$apm25','$time','$date','$entry_id')";
+                ('$cpm10','$cpm25','$time','$date','$entry_id')";
     
                 if($conn->query($sql)!==TRUE){
                     echo "</table> Error: " . $sql . "<br>" . $conn->error;
@@ -217,7 +217,7 @@
     $result=$conn->query($sql);
     if($result->num_rows>0){
         while($row=$result->fetch_assoc()) {
-            echo "<tr class='w3-teal'><td>" . $row["apm10"]. "</td><td>" . $row["apm25"]. "</td><td>" . $row["time"]. "</td><td>" . $row["date"]."</td></tr>";
+            echo "<tr class='w3-teal'><td>" . $row["cpm10"]. "</td><td>" . $row["cpm25"]. "</td><td>" . $row["time"]. "</td><td>" . $row["date"]."</td></tr>";
         }
         echo "</table>";
     } else { echo "0 results"; }
