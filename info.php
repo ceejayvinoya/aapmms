@@ -176,8 +176,8 @@
     //DECODE AND SORT DATA INTO SENSOR VALUES AND TIMESTAMPS
 
     for($x = 0; $x < $res; $x++) {
-        $apm10 = $json['feeds'][$x]['field1'];
-        $apm25 = $json['feeds'][$x]['field2'];
+        $apm10 = $json['feeds'][$x]['field3'];
+        $apm25 = $json['feeds'][$x]['field4'];
         $entry_id = $json['feeds'][$x]['entry_id'];
 
         $timestamp = $json['feeds'][$x]['created_at'];
@@ -191,7 +191,7 @@
 
         //CHECK IF LATEST DATA IS ALREADY ON DATABASE
 
-        $sql = "SELECT * FROM insensor WHERE time = '$time' AND date = '$date'";
+        $sql = "SELECT * FROM insensortwo WHERE time = '$time' AND date = '$date'";
         $result=$conn->query($sql);
         if($result->num_rows>0){
         
@@ -200,7 +200,7 @@
         } else {
             //ELSE IF DATA IS NOT UPDATED, INSERT UPDATED DATA TO DATABASE
           
-                $sql="INSERT INTO insensor (apm10, apm25, time, date, entry_id)
+                $sql="INSERT INTO insensortwo (apm10, apm25, time, date, entry_id)
                 VALUES
                 ('$apm10','$apm25','$time','$date','$entry_id')";
     
@@ -213,7 +213,7 @@
 
     //DISPLAY TABLE
 
-    $sql="SELECT * FROM insensor ORDER BY entry_id DESC LIMIT 30";
+    $sql="SELECT * FROM insensortwo ORDER BY entry_id DESC LIMIT 30";
     $result=$conn->query($sql);
     if($result->num_rows>0){
         while($row=$result->fetch_assoc()) {
