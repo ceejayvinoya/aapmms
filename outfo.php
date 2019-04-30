@@ -29,26 +29,27 @@
 
    </div>
    
-   <form method="post" class="w3-container">
-      <div class="w3-teal">
-         <label>Input Hour:</label><br>
-         <input class="w3-input w3-border" type="text" id="time" style="width: 320px" placeholder="0 to 23, Military Time">
-         <br>
-         <label>Input Date:</label><br>
-         <input class="w3-input w3-border" type="text" id="date" style="width: 320px" placeholder="yyyy-mm-dd">
-         <br>
-         <button class="w3-btn w3-aqua" type="button" id="submit">Submit</button>
-      </div>
-   </form>   
-      
-   <div class="w3-container" style="position: relative; top: 10px">
-      <form method="get">
-         <button class="w3-btn w3-aqua" type="button" id="refresh">Refresh</button>
-      </form>
+   <div class="w3-container">
+<label>Input Hour:</label><br>
+<input class="w3-input w3-border" type="text" id="time" style="width: 320px" placeholder="0 to 23, Military Time">
+<br><label>Input Date:</label><br>
+<input class="w3-input w3-border" type="text" id="date" style="width: 320px" placeholder="yyyy-mm-dd">
+<br>	
    </div>
+   
+   <div class="w3-container" style="position: relative">
+   <form method="post" style="display: inline-block">
+<button class="w3-btn w3-aqua" type="button" id="submit">Submit</button>
+
+</form>
+   
+   <form method="get" style="display: inline-block">
+   <button class="w3-btn w3-aqua" type="button" id="refresh">Refresh</button>
+   </form>
+</div>
       
    <div id="result" class="w3-container w3-teal" style = "position: relative; top: 10px;">
-      <table style="width: 320px; position: relative; top: 10px;" class="w3-table-all">
+      <table style="width: 320px; position: relative; top: 10px; border: 2px solid #00008b" class="w3-table-all">
          <thead>
             <tr class="w3-green">
                <th>PM10</th> 
@@ -69,12 +70,12 @@
             die("</table> Connection Failed: " . $conn->connect_error);
          }
     //OBTAIN SENSOR DATA FROM THINGSPEAK
-         $jsondata = file_get_contents("https://api.thingspeak.com/channels/754899/feeds.json?api_key=PJ2C7CICC344DUVR&timezone=Asia/Hong_Kong&results=1");
+         $jsondata = file_get_contents("https://api.thingspeak.com/channels/769993/feeds.json?api_key=4LWAS8YZEWE9FFB8&timezone=Asia/Hong_Kong&results=1");
          $json = json_decode($jsondata, true);
     
          $test = $json['feeds'][0]['entry_id'];
          $res = $test;
-         $page = 'https://api.thingspeak.com/channels/754899/feeds.json?api_key=PJ2C7CICC344DUVR&timezone=Asia/Hong_Kong&results=';
+         $page = 'https://api.thingspeak.com/channels/769993/feeds.json?api_key=4LWAS8YZEWE9FFB8&timezone=Asia/Hong_Kong&results=';
          $jsondata = file_get_contents($page.$res);
          $json = json_decode($jsondata, true);
     //DECODE AND SORT DATA INTO SENSOR VALUES AND TIMESTAMPS
