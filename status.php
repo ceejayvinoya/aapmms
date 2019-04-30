@@ -75,9 +75,9 @@
     $timeA = strtotime($date.' '.$time);
     $timeB = strtotime($B);
     if(300 > $timeB - $timeA){
-        echo '<tr class="w3-teal"><td>Sensor 2</td><td>Running</td></tr>';
+        echo '<tr class="w3-teal"><td>Sensor 3</td><td>Running</td></tr>';
     } else {
-        echo '<tr class="w3-teal"><td>Sensor 2</td><td>Inactive</td></tr>';
+        echo '<tr class="w3-teal"><td>Sensor 3</td><td>Inactive</td></tr>';
     }
 ?>
 </table>
