@@ -28,9 +28,9 @@
    <h2>Incoming Air PM Sensor</h2>
    </div>
 <div class="w3-container w3-teal" style = "position: relative">
-<iframe width="340" height="196" style="max-width: 100%; display: inline-block; border: 2px solid #00008b;" src="https://thingspeak.com/channels/754899/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=PJ2C7CICC344DUVR&results=30&type=line&update=15&height=196&width=340&title=Sensor+2+PM+10"></iframe>
+<iframe width="340" height="196" style="max-width: 100%; display: inline-block; border: 2px solid #00008b;" src="https://thingspeak.com/channels/754899/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=PJ2C7CICC344DUVR&results=30&type=line&update=15&height=196&width=340&title=Incoming+Sensor+PM+10"></iframe>
    
-<iframe width="340" height="196" style="max-width: 100%; display: inline-block; border: 2px solid #00008b;" src="https://thingspeak.com/channels/754899/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=PJ2C7CICC344DUVR&results=30&type=line&update=15&height=196&width=340&title=Sensor+2+PM+2.5"></iframe>
+<iframe width="340" height="196" style="max-width: 100%; display: inline-block; border: 2px solid #00008b;" src="https://thingspeak.com/channels/754899/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=PJ2C7CICC344DUVR&results=30&type=line&update=15&height=196&width=340&title=Incoming+Sensor+PM+2.5"></iframe>
 
    </div>
    
@@ -39,9 +39,9 @@
    </div>
    
 <div class="w3-container w3-teal" style = "position: relative">
-<iframe width="340" height="196" style="max-width: 100%; display: inline-block; border: 2px solid #00008b;" src="https://thingspeak.com/channels/769993/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=4LWAS8YZEWE9FFB8&results=30&type=line&update=15&height=196&width=340&title=Sensor+3+PM+10"></iframe>
+<iframe width="340" height="196" style="max-width: 100%; display: inline-block; border: 2px solid #00008b;" src="https://thingspeak.com/channels/769993/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=4LWAS8YZEWE9FFB8&results=30&type=line&update=15&height=196&width=340&title=Outgoing+Sensor+PM+10"></iframe>
 
-<iframe width="340" height="196" style="max-width: 100%; display: inline-block; border: 2px solid #00008b;" src="https://thingspeak.com/channels/769993/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=4LWAS8YZEWE9FFB8&results=30&type=line&update=15&height=196&width=340&title=Sensor+3+PM+2.5"></iframe>
+<iframe width="340" height="196" style="max-width: 100%; display: inline-block; border: 2px solid #00008b;" src="https://thingspeak.com/channels/769993/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=4LWAS8YZEWE9FFB8&results=30&type=line&update=15&height=196&width=340&title=Outgoing+Sensor+PM+2.5"></iframe>
 </div>
 
 </body>
