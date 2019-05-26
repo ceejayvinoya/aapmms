@@ -16,9 +16,9 @@ echo '<td>Status</td></tr>';
     $timeA = strtotime($date.' '.$time);
     $timeB = strtotime($B);
     if(300 > $timeB - $timeA){
-        echo '<tr class="w3-teal"><td>Sensor 2</td><td>Running</td></tr>';
+        echo '<tr class="w3-teal"><td>Incoming Sensor</td><td>Running</td></tr>';
     } else {
-        echo '<tr class="w3-teal"><td>Sensor 2</td><td>Inactive</td></tr>';
+        echo '<tr class="w3-teal"><td>Incoming Sensor</td><td>Inactive</td></tr>';
     }
 $jsondata = file_get_contents("https://api.thingspeak.com/channels/769993/feeds.json?api_key=4LWAS8YZEWE9FFB8&results=1");
     $json = json_decode($jsondata, true);
@@ -32,8 +32,8 @@ $jsondata = file_get_contents("https://api.thingspeak.com/channels/769993/feeds.
     $timeA = strtotime($date.' '.$time);
     $timeB = strtotime($B);
     if(300 > $timeB - $timeA){
-        echo '<tr class="w3-teal"><td>Sensor 3</td><td>Running</td></tr>';
+        echo '<tr class="w3-teal"><td>Outgoing Sensor</td><td>Running</td></tr>';
     } else {
-        echo '<tr class="w3-teal"><td>Sensor 3</td><td>Inactive</td></tr>';
+        echo '<tr class="w3-teal"><td>Outgoing Sensor</td><td>Inactive</td></tr>';
     }
 ?>
