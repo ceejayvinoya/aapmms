@@ -15,7 +15,7 @@
           $time = "0".$time;
         }
 
-    	$query = mysqli_query($conn, "SELECT * FROM outsensor WHERE time LIKE '$time:%' AND date LIKE '$date'") or die(mysqli_error());
+    	$query = mysqli_query($conn, "SELECT * FROM outsensor WHERE time LIKE '$time:%' AND date LIKE '$date' ORDER BY date DESC, time DESC") or die(mysqli_error());
     	$row = mysqli_num_rows($query);
         echo "<table style='width: 320px; position: relative; top: 10px; border: 2px solid #00008b' class='w3-table-all'><tr class='w3-green'><th>PM10</th><th>PM2.5</th><th>Time</th><th>Date</th></tr>";
         if($query->num_rows>0){    	
