@@ -126,7 +126,7 @@
 
     //DISPLAY TABLE
 
-    $sql="SELECT * FROM insensortwo ORDER BY entry_id DESC LIMIT 30";
+    $sql="SELECT * FROM insensortwo ORDER BY date DESC, time DESC LIMIT 30";
     $result=$conn->query($sql);
     if($result->num_rows>0){
         while($row=$result->fetch_assoc()) {
