@@ -4,7 +4,7 @@
 		die("Error: Failed to connect to database!");
 	}
 
-	$query = mysqli_query($conn, "SELECT * FROM insensortwo ORDER BY entry_id DESC LIMIT 30") or die(mysqli_error());
+	$query = mysqli_query($conn, "SELECT * FROM insensortwo ORDER BY date DESC, time DESC LIMIT 30") or die(mysqli_error());
     	$row = mysqli_num_rows($query);
         echo "<table width='320' style='max-width: 320px; display: inline-table; border: 2px solid #00008b' class='w3-table-all'><tr class='w3-green'><th>PM10</th><th>PM2.5</th><th>Time</th><th>Date</th></tr>";
         if($query->num_rows>0){    	
