@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html><body>
+     var timenow = new Date().toLocaleTimeString();
 <?php
 
 $servername = "ctgplw90pifdso61.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
@@ -12,13 +15,13 @@ $password = "rkiww4updt427u90";
 // If you change this value, the ESP32 sketch needs to match
 $api_key_value = "tPmAT5Ab3j7F9";
 
-$api_key= $time = $pm25 = "";
-
+$api_key= $apm25 = "";
+$time = timenow;
+    
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $api_key = test_input($_POST["api_key"]);
     if($api_key == $api_key_value) {
-        $time = test_input($_POST["time"]);
-        $pm25 = test_input($_POST["pm25"]);
+        $pm25 = test_input($_POST["apm25"]);
         
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -28,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } 
         
         $sql = "INSERT INTO insensor (time, apm25)
-        VALUES ('" . $time . "', '" . $pm25 . "')";
+        VALUES ('" . $time . "', '" . $apm25 . "')";
         
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";
@@ -54,3 +57,5 @@ function test_input($data) {
     $data = htmlspecialchars($data);
     return $data;
 }
+?>
+    </body></html>
