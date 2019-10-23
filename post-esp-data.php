@@ -19,7 +19,7 @@ $time = date("Y-m-d H:i:s");
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $api_key = test_input($_POST["api_key"]);
     if($api_key == $api_key_value) {
-        $pm25 = test_input($_POST["apm25"]);
+        $apm25 = test_input($_POST["apm25"]);
         
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
