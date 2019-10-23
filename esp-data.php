@@ -17,7 +17,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT id, apm25, time FROM SensorData ORDER BY id DESC";
+$sql = "SELECT id, apm25, time FROM insensor ORDER BY id DESC";
 
 echo '<table cellspacing="5" cellpadding="5">
       <tr> 
