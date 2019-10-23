@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html><body>
-     var timenow = new Date().toLocaleTimeString();
 <?php
 
 $servername = "ctgplw90pifdso61.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
@@ -58,4 +55,3 @@ function test_input($data) {
     return $data;
 }
 ?>
-    </body></html>
