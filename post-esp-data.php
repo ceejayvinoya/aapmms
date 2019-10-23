@@ -13,8 +13,9 @@ $password = "rkiww4updt427u90";
 $api_key_value = "tPmAT5Ab3j7F9";
 
 $api_key= $apm25 = "";
-$time = timenow;
-    
+
+$time = date("Y-m-d H:i:s");
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $api_key = test_input($_POST["api_key"]);
     if($api_key == $api_key_value) {
