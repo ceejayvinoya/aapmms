@@ -14,7 +14,12 @@ $api_key_value = "tPmAT5Ab3j7F9";
 
 $api_key= $apm25 = "";
 
-$time = date("Y-m-d H:i:s");
+$tz = 'Asia/Manila';
+$timestamp = time();
+$dt = new DateTime("now", new DateTimeZone($tz)); //first argument "must" be a string
+$dt->setTimestamp($timestamp); //adjust the object to correct timestamp
+echo $dt->format('d.m.Y, H:i:s');
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $api_key = test_input($_POST["api_key"]);
@@ -29,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } 
         
         $sql = "INSERT INTO insensor (time, apm25)
-        VALUES ('" . $time . "', '" . $apm25 . "')";
+        VALUES ('" . $dt . "', '" . $apm25 . "')";
         
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";
