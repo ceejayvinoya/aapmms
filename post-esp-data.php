@@ -15,7 +15,7 @@ $api_key_value = "tPmAT5Ab3j7F9";
 $api_key= $apm25 = "";
 
 date_default_timezone_set('Asia/Manila');
-$dt = date("Y-m-d h:i:sa");
+$dt = date("Y-m-d h:i:s");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $api_key = test_input($_POST["api_key"]);
