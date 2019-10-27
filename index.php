@@ -28,7 +28,7 @@
    <h2>Incoming Air PM Sensor</h2>
    </div>
 <div class="w3-container w3-teal" style = "position: relative">
-   <iframe width="340" height="196" style="max-width: 100%; display: inline-block; border: 2px solid #00008b;" src="www.aapmms.me/graph.html"></iframe>
+   <iframe width="340" height="196" style="max-width: 100%; display: inline-block; border: 2px solid #00008b;" src="http://www.aapmms.me/graph.html"></iframe>
 </div>
    
 <div class="w3-container w3-teal">
