@@ -8,7 +8,7 @@ $(document).ready(function(){
       var time = [];
 
       for(var i in data) {
-        value.push("value " + data[i].value);
+        value.push(data[i].value);
         time.push(data[i].time);
       }
 
@@ -20,9 +20,9 @@ $(document).ready(function(){
             fill: false,
             backgroundColor: 'rgba(243, 18, 156 , 1)',
             borderColor: 'rgba(243, 18, 156 , 1)',
-            data: value,
+            data: value
           }
-        ],
+        ]
       };
 
       var ctx = $("#mycanvas");
