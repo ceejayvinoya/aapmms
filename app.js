@@ -13,15 +13,14 @@ $(document).ready(function(){
       }
 
       var chartdata = {
-        labels: value,
+        labels: time,
         datasets : [
           {
             label: 'value',
-            backgroundColor: 'rgba(200, 200, 200, 0.75)',
-            borderColor: 'rgba(200, 200, 200, 0.75)',
-            hoverBackgroundColor: 'rgba(200, 200, 200, 1)',
-            hoverBorderColor: 'rgba(200, 200, 200, 1)',
-            data: time
+            backgroundColor: 'rgba(243, 18, 156 , 1)',
+            borderColor: 'rgba(243, 18, 156 , 1)',
+            
+            data: values
           }
         ]
       };
