@@ -8,8 +8,8 @@ $(document).ready(function(){
       var time = [];
 
       for(var i in data) {
-        player.push("Player " + data[i].value);
-        score.push(data[i].time);
+        value.push("value " + data[i].value);
+        time.push(data[i].time);
       }
 
       var chartdata = {
