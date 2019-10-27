@@ -28,7 +28,7 @@
    <h2>Incoming Air PM Sensor</h2>
    </div>
 <div class="w3-container w3-teal" style = "position: relative">
-   <iframe width="340" height="196" style="max-width: 100%; display: inline-block; border: 2px solid #00008b;" src="https://thingspeak.com/channels/754899/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=PJ2C7CICC344DUVR&results=30&type=line&update=15&height=196&width=340&title=Incoming+Sensor+PM+2.5"></iframe>
+   <iframe width="340" height="196" style="max-width: 100%; display: inline-block; border: 2px solid #00008b;" src="https://www.aapmms.me/graph.html"></iframe>
 </div>
    
 <div class="w3-container w3-teal">
