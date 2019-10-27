@@ -9,7 +9,7 @@ $(document).ready(function(){
 
       for(var i in data) {
         value.push(data[i].value);
-        time.push(data[i].time);
+        time.push(data[i].timestamp);
       }
 
       var chartdata = {
