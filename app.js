@@ -20,7 +20,7 @@ $(document).ready(function(){
             backgroundColor: 'rgba(243, 18, 156 , 1)',
             borderColor: 'rgba(243, 18, 156 , 1)',
             
-            data: values
+            data: value
           }
         ]
       };
