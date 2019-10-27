@@ -16,7 +16,7 @@
       die("Connection failed: " . $conn->connect_error);
     }
     //the SQL query to be executed
-    $query = "SELECT * FROM insensor";
+    $query = "SELECT * FROM insensor ORDER BY id DESC LIMIT 20";
     //storing the result of the executed query
     $result = $conn->query($query);
     //initialize the array to store the processed data
