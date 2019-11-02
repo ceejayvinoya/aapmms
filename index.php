@@ -11,9 +11,10 @@
    <title>AAPMMS - DLSUD</title>
    <style type="text/css">
       #chart-container {
-        width: 80%;
-        height: 480px;
+        width: 60%;
+        height: 360px;
         margin: 0 auto;
+         float: left;
       }
     </style>
 </head>
