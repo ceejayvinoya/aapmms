@@ -30,7 +30,7 @@
 </ul>
 </div>
 
-<div class="w3-container">
+<div class="w3-container w3-lime">
    <h1>Automated Air Pollution Monitoring and Mitigation System</h1>
    </div>
 <div id="chart-container" class="w3-container" style = "position: relative">
