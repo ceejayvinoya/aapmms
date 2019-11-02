@@ -32,7 +32,6 @@
 
 <div class="w3-container">
    <h1>Automated Air Pollution Monitoring and Mitigation System</h1>
-   <h2>Incoming Air PM Sensor</h2>
    </div>
 <div id="chart-container" class="w3-container" style = "position: relative">
    <canvas id="mycanvas"></canvas>
