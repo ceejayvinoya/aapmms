@@ -9,18 +9,22 @@
    <script type="text/javascript" src="jquery.min.js"></script>
    <script type="text/javascript" src="chart.min.js"></script>
    <script type="text/javascript" src="app.js"></script>
+   <script type="text/javascript" src="table.js"></script>
    <title>AAPMMS - DLSUD</title>
    <style type="text/css">
       #chart-container {
         width: 60%;
         height: 360px;
         margin: 0 auto;
-         float: left;
+        float: left;
+      }
+      th {
+        font-weight : bold
       }
     </style>
 </head>
 
-<body>
+<body onLoad="buildHtmlTable()">
 
 <div id='cssmenu'>
 <ul>
@@ -37,5 +41,9 @@
    <canvas id="mycanvas"></canvas>
    </div>
    
+   <div>
+      <table id="excelDataTable" border="1">
+</table>
+   </div>
 </body>
 </html>
