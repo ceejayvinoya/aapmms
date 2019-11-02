@@ -42,8 +42,8 @@
    </div>
    
    <div>
-      <table id="excelDataTable" border="1">
-</table>
+      <table class="w3-table w3-striped" id="excelDataTable" border="1">
+      </table>
    </div>
 </body>
 </html>
