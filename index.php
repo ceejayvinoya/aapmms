@@ -9,6 +9,13 @@
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
    <script src="script.js"></script>
    <title>AAPMMS - DLSUD</title>
+   <style type="text/css">
+      #chart-container {
+        width: 80%;
+        height: 480px;
+        margin: 0 auto;
+      }
+    </style>
 </head>
 
 <body class="w3-teal">
@@ -27,10 +34,12 @@
    <h1>Automated Air Pollution Monitoring and Mitigation System</h1>
    <h2>Incoming Air PM Sensor</h2>
    </div>
-<div class="w3-container w3-teal" style = "position: relative">
-   <iframe width="340" height="196" style="max-width: 100%; display: inline-block; border: 2px solid #00008b;" src="http://www.aapmms.me/graph.html"></iframe>
-</div>
-   
+<div id="chart-container" class="w3-container w3-teal" style = "position: relative">
+   <canvas id="mycanvas"></canvas>
+   </div>
+   <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="chart.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
 <div class="w3-container w3-teal">
    <h2>Outgoing Air PM Sensor</h2>
 </div>
