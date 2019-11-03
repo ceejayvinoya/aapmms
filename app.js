@@ -9,8 +9,8 @@ $(document).ready(function(){
       var time = [];
 
       for(var i in data) {
-        apm25.push(data[i].apm25);
-        bpm25.push(data[i].bpm25);
+        apm25.push(data[i].incoming);
+        bpm25.push(data[i].outgoing);
         time.push(data[i].timestamp);
       }
 
