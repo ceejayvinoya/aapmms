@@ -7,6 +7,7 @@
    <link rel="stylesheet" href="styles.css">
    <link rel="stylesheet" href="w3.css">
    <script type="text/javascript" src="table.js"></script>
+   <script type="text/javascript" src="chart.min.js"></script>
    <script src="jquery.min.js" type="text/javascript"></script>
    <title>AAPMMS - DLSUD</title>
 </head>
@@ -24,8 +25,10 @@
    <h2>Air PM Data</h2>
    </div>
    
+   <div>
    <table id="excelDataTable" border="1">
 </table>
-   
+   </div>
+      
 </body>
 </html>
