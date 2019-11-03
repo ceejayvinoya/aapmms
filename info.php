@@ -8,8 +8,6 @@
    <link rel="stylesheet" href="styles.css">
    <link rel="stylesheet" href="w3.css">
    <script type="text/javascript" src="jquery.min.js"></script>
-   <script type="text/javascript" src="chart.min.js"></script>
-   <script type="text/javascript" src="app.js"></script>
    <script type="text/javascript" src="table.js"></script>
    <title>AAPMMS - DLSUD</title>
    <style type="text/css">
