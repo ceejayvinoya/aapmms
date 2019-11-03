@@ -17,21 +17,24 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT id, apm25, time FROM insensor ORDER BY id DESC";
+$sql = "SELECT id, apm25, bpm25, time FROM insensor ORDER BY id DESC";
 
 echo '<table cellspacing="5" cellpadding="5">
       <tr> 
-        <td>Incoming Air (ug/m3)</td> 
+        <td>Incoming Air (ug/m3)</td>
+        <td>Outgoing Air (ug/m3)</td>
         <td>Time</td> 
       </tr>';
  
 if ($result = $conn->query($sql)) {
     while ($row = $result->fetch_assoc()) {
         $row_apm25 = $row["apm25"];
+        $row_bpm25 = $row["bpm25"];
         $row_time = $row["time"];
       
         echo '<tr> 
-                <td>' . $row_apm25 . '</td> 
+                <td>' . $row_apm25 . '</td>
+                <td>' . $row_bpm25 . '</td>
                 <td>' . $row_time . '</td>
               </tr>';
     }
