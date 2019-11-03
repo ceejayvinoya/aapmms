@@ -4,11 +4,13 @@ $(document).ready(function(){
         method: "GET",
         success: function(data) {
             console.log(data);
-            var value = [];
+            var apm25 = [];
+            var bpm25 = [];
             var time = [];
 
             for(var i in data) {
-                value.push(data[i].value);
+                apm25.push(data[i].apm25);
+                bpm25.push(data[i].bpm25);
                 time.push(data[i].timestamp);
             }
 
