@@ -27,7 +27,7 @@
 <body onLoad="buildHtmlTable()">
 <div id='cssmenu'>
 <ul>
-   <li><a href='#'><span>Home</span></a></li>
+   <li><a href='index.php'><span>Home</span></a></li>
    <li class='active'><a href='#'><span>Tables</span></a></li>
    <li class='last'><a href='about.html'><span>About</span></a></li>
 </ul>
