@@ -9,7 +9,6 @@
    <script type="text/javascript" src="jquery.min.js"></script>
    <script type="text/javascript" src="chart.min.js"></script>
    <script type="text/javascript" src="app.js"></script>
-   <script type="text/javascript" src="table.js"></script>
    <title>AAPMMS - DLSUD</title>
    <style type="text/css">
       #chart-container {
@@ -17,9 +16,6 @@
         height: 360px;
         margin: 0 auto;
         float: left;
-      }
-      th {
-        font-weight : bold
       }
     </style>
 </head>
@@ -39,11 +35,6 @@
    </div>
 <div id="chart-container" class="w3-container" style = "position: relative">
    <canvas id="mycanvas"></canvas>
-   </div>
-   
-   <div class="w3-container">
-      <table id="excelDataTable" border="1">
-      </table>
    </div>
 </body>
 </html>
