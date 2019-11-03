@@ -12,7 +12,7 @@ $password = "rkiww4updt427u90";
 // If you change this value, the ESP32 sketch needs to match
 $api_key_value = "tPmAT5Ab3j7F9";
 
-$api_key= $apm25 = "";
+$api_key = $apm25 = $bpm25 = "";
 
 date_default_timezone_set('Asia/Manila');
 $dt = date("Y-m-d h:i:s");
@@ -21,6 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $api_key = test_input($_POST["api_key"]);
     if($api_key == $api_key_value) {
         $apm25 = test_input($_POST["apm25"]);
+        $bpm25 = test_input($_POST["bpm25"]);
         
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -29,8 +30,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             die("Connection failed: " . $conn->connect_error);
         } 
         
-        $sql = "INSERT INTO insensor (time, apm25)
-        VALUES ('" . $dt . "', '" . $apm25 . "')";
+        $sql = "INSERT INTO insensor (time, apm25, bpm25)
+        VALUES ('" . $dt . "', '" . $apm25 . "', '" . $bpm25 . "')";
         
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";
