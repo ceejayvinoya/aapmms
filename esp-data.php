@@ -21,7 +21,7 @@ $sql = "SELECT id, apm25, time FROM insensor ORDER BY id DESC";
 
 echo '<table cellspacing="5" cellpadding="5">
       <tr> 
-        <td>Value 1 (ug/m3)</td> 
+        <td>Incoming Air (ug/m3)</td> 
         <td>Time</td> 
       </tr>';
  
