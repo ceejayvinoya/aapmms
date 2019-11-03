@@ -4,11 +4,13 @@ $(document).ready(function(){
     method: "GET",
     success: function(data) {
       console.log(data);
-      var value = [];
+      var apm25 = [];
+      var bpm25 = [];
       var time = [];
 
       for(var i in data) {
-        value.push(data[i].value);
+        apm25.push(data[i].apm25);
+        bpm25.push(data[i].bpm25);
         time.push(data[i].timestamp);
       }
 
@@ -16,12 +18,18 @@ $(document).ready(function(){
         labels: time,
         datasets : [
           {
-            label: 'value',
+            label: 'Incoming Air (ug/m3)',
             fill: false,
             backgroundColor: 'rgba(243, 18, 156 , 1)',
             borderColor: 'rgba(243, 18, 156 , 1)',
-            data: value
-          }
+            data: apm25
+          },{
+                label: 'Outgoing Air (ug/m3)',
+                fill: false,  //Try with true
+                backgroundColor: 'rgba( 243, 156, 18 , 1)', //Dot marker color
+                borderColor: 'rgba( 243, 156, 18 , 1)', //Graph Line Color
+                data: bpm25
+            }
         ]
       };
 
@@ -33,7 +41,7 @@ $(document).ready(function(){
         options: {
             title: {
                     display: true,
-                    text: "Incoming Air"
+                    text: "Air PM Sensor Results"
                 },
             maintainAspectRatio: false,
             elements: {
