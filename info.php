@@ -35,7 +35,7 @@
    </div>
    
    <div class="w3-container">
-      <table id="excelDataTable" border="1">
+      <table class="w3-table" id="excelDataTable" border="1">
       </table>
    </div>
 </body>
