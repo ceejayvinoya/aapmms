@@ -9,8 +9,8 @@ $(document).ready(function(){
       var time = [];
 
       for(var i in data) {
-        apm25.push(data[i].Incoming (ug/m3));
-        bpm25.push(data[i].Outgoing (ug/m3));
+        apm25.push(data[i].Incoming);
+        bpm25.push(data[i].Outgoing);
         time.push(data[i].Timestamp);
       }
 
