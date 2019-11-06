@@ -26,8 +26,8 @@
       //Converting the results into an associative array
       while($row = $result->fetch_assoc()) {
         $jsonArrayItem = array();
-        $jsonArrayItem['Incoming (ug/m3)'] = $row['apm25'];
-        $jsonArrayItem['Outgoing (ug/m3)'] = $row['bpm25'];
+        $jsonArrayItem['Incoming'] = $row['apm25'];
+        $jsonArrayItem['Outgoing'] = $row['bpm25'];
         $jsonArrayItem['Timestamp'] = $row['time'];
         //append the above created object into the main array.
         array_push($jsonArray, $jsonArrayItem);
