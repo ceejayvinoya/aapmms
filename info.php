@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang=''>
 <head>
@@ -11,12 +10,6 @@
    <script type="text/javascript" src="table.js"></script>
    <title>AAPMMS - DLSUD</title>
    <style type="text/css">
-      #chart-container {
-        width: 60%;
-        height: 360px;
-        margin: 0 auto;
-        float: left;
-      }
       th {
         font-weight : bold
       }
@@ -34,8 +27,9 @@
    <h1>Automated Air Pollution Monitoring and Mitigation System</h1>
    </div>
    
-   <div class="w3-container">
-      <table class="w3-table" id="excelDataTable" border="1">
+   <div class="w3-container w3-lime">
+      <br>
+      <table class="w3-table-all" id="excelDataTable">
       </table>
    </div>
 </body>
