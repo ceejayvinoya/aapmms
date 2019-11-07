@@ -16,7 +16,7 @@
       }
     </style>
 </head>
-<body onLoad="buildHtmlTable()">
+<body>
 <div id='cssmenu'>
 <ul>
    <li><a href='index.php'><span>Home</span></a></li>
@@ -36,7 +36,7 @@
 
     <div class="w3-container w3-khaki" style="position: relative">
    <form method="post" style="display: inline-block">
-<button class="w3-btn w3-aqua" type="button" id="submit">Submit</button>
+<button class="w3-btn w3-lime" type="button" id="submit">Submit</button>
 
 </form>
    
