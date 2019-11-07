@@ -24,28 +24,28 @@
    <li class='last'><a href='about.html'><span>About</span></a></li>
 </ul>
 </div>
-<div class="w3-container w3-lime">
+<div class="w3-container w3-khaki">
    <h2>Automated Air Pollution Monitoring and Mitigation System</h2>
    </div>
    
-   <div class="w3-container w3-lime">
+   <div class="w3-container w3-khaki">
 <br><label>Input Date:</label><br>
 <input class="w3-input w3-border" type="text" id="date" style="width: 320px" placeholder="yyyy-mm-dd">
 <br>	
 </div>
 
-    <div class="w3-container" style="position: relative">
+    <div class="w3-container w3-khaki" style="position: relative">
    <form method="post" style="display: inline-block">
 <button class="w3-btn w3-aqua" type="button" id="submit">Submit</button>
 
 </form>
    
    <form method="get" style="display: inline-block">
-   <button class="w3-btn w3-aqua" type="button" id="refresh">Refresh</button>
+   <button class="w3-btn w3-lime" type="button" id="refresh">Refresh</button>
    </form>
 </div>
    
-   <div class="w3-container w3-lime">
+   <div class="w3-container w3-khaki">
       <br>
       <table class="w3-table-all" id="excelDataTable">
       </table>
