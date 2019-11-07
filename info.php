@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="w3.css">
    <script type="text/javascript" src="jquery.min.js"></script>
    <script type="text/javascript" src="table.js"></script>
+   <script src="infoscript.js"></script>
    <title>AAPMMS - DLSUD</title>
    <style type="text/css">
       th {
@@ -24,8 +25,25 @@
 </ul>
 </div>
 <div class="w3-container w3-lime">
-   <h1>Automated Air Pollution Monitoring and Mitigation System</h1>
+   <h2>Automated Air Pollution Monitoring and Mitigation System</h2>
    </div>
+   
+   <div class="w3-container">
+<br><label>Input Date:</label><br>
+<input class="w3-input w3-border" type="text" id="date" style="width: 320px" placeholder="yyyy-mm-dd">
+<br>	
+</div>
+
+    <div class="w3-container" style="position: relative">
+   <form method="post" style="display: inline-block">
+<button class="w3-btn w3-aqua" type="button" id="submit">Submit</button>
+
+</form>
+   
+   <form method="get" style="display: inline-block">
+   <button class="w3-btn w3-aqua" type="button" id="refresh">Refresh</button>
+   </form>
+</div>
    
    <div class="w3-container w3-lime">
       <br>
