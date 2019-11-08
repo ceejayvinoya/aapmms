@@ -60,7 +60,7 @@
             die("</table> Connection Failed: " . $conn->connect_error);
          }
     //DISPLAY TABLE
-         $sql="SELECT * FROM insensor ORDER BY date DESC LIMIT 30";
+         $sql="SELECT * FROM insensor ORDER BY time DESC LIMIT 30";
          $result=$conn->query($sql);
          if($result->num_rows>0){
             while($row=$result->fetch_assoc()) {
