@@ -29,12 +29,15 @@
    <li class='last'><a href='about.html'><span>About</span></a></li>
 </ul>
 </div>
-
+<div class="w3-khaki">
 <div class="w3-container w3-khaki">
    <h2>Automated Air Pollution Monitoring and Mitigation System</h2>
    </div>
-<div id="chart-container" class="w3-container w3-khaki" style = "position: relative">
+<div id="chart-container" class="w3-container w3-white" style = "position: relative">
    <canvas id="mycanvas"></canvas>
+   </div>
+   <br>
+   <br>
    </div>
 </body>
 </html>
