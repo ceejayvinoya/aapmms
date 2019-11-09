@@ -23,6 +23,7 @@
    </div>
    
    <div class="w3-container w3-khaki">
+      <br>
 <label>Input Date:</label><br>
 <input class="w3-input w3-border" type="text" id="date" style="width: 320px" placeholder="yyyy-mm-dd">
 <br>	
@@ -72,6 +73,6 @@
       $conn->close();
       ?>
       </div>
-
+<br>
 </body>
 </html>
