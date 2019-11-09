@@ -41,7 +41,7 @@
 </div>
       
    <div id="result" class="w3-container w3-khaki" style = "position: relative; top: 10px;">
-      <table style="width: 320px; position: relative; top: 10px; border: 2px solid #00008b" class="w3-table-all">
+      <table style="position: relative; top: 10px; border: 2px solid #00008b" class="w3-table-all">
          <thead>
             <tr class="w3-green">
                <th>Incoming (ug/m3)</th>
