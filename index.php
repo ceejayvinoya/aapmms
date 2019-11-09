@@ -14,11 +14,11 @@
       #chart-container {
         width: 60%;
         height: 360px;
-        margin: 0 auto;
-        float: left;
+        margin: auto;
+        border: 3px solid blue;
       }
       body {
-        background-color: lightblue;
+        background-color: khaki;
       }
     </style>
 </head>
@@ -32,15 +32,13 @@
    <li class='last'><a href='about.html'><span>About</span></a></li>
 </ul>
 </div>
-<div class="w3-khaki">
-<div class="w3-container w3-khaki">
+<div class="w3-container">
    <h2>Automated Air Pollution Monitoring and Mitigation System</h2>
    </div>
-<div id="chart-container" class="w3-container w3-white" style = "margin: auto">
+<div id="chart-container" class="w3-container w3-white">
    <canvas id="mycanvas"></canvas>
    </div>
    <br>
    <br>
-   </div>
 </body>
 </html>
