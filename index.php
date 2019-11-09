@@ -17,6 +17,9 @@
         margin: 0 auto;
         float: left;
       }
+      body {
+        background-color: lightblue;
+      }
     </style>
 </head>
 
@@ -33,7 +36,7 @@
 <div class="w3-container w3-khaki">
    <h2>Automated Air Pollution Monitoring and Mitigation System</h2>
    </div>
-<div id="chart-container" class="w3-container w3-white" style = "position: relative">
+<div id="chart-container" class="w3-container w3-white" style = "margin: auto">
    <canvas id="mycanvas"></canvas>
    </div>
    <br>
