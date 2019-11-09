@@ -20,6 +20,9 @@
       body {
         background-color: khaki;
       }
+      h2 {
+        text-align: center;
+      }
     </style>
 </head>
 
