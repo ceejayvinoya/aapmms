@@ -1,5 +1,5 @@
-$(document).ready(setInterval(function(){
-  $.ajax({
+function fetchdata(){
+$.ajax({
     url: "http://www.aapmms.me/chart_data.php",
     method: "GET",
     success: function(data) {
@@ -63,4 +63,8 @@ $(document).ready(setInterval(function(){
       console.log(data);
     }
   });
-}, 180000));
+}
+
+$(document).ready(function(){
+  setInterval(fetchdata,180000);
+});
