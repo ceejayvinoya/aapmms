@@ -65,6 +65,7 @@ $.ajax({
   });
 }
 
-$(document).ready(function(){
-  setInterval(fetchdata,180000);
+$(document).ready(setInterval(function fetchdata(){
+return fetchdata;
+},180000);
 });
