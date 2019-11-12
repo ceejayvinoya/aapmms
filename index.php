@@ -14,9 +14,18 @@
       #chart-container {
         width: 60%;
         float: left;
+        position: relative;
         height: 360px;
         margin: 25px;
         border: 3px solid blue;
+      }
+      #aqi-container {
+         width: 30%;
+         float: right;
+         position: relative;
+         height: 360px;
+         margin: 25px;
+         border: 3px solid green;
       }
       body {
         background-color: khaki;
@@ -41,6 +50,8 @@
    </div>
 <div id="chart-container" class="w3-container w3-white">
    <canvas id="mycanvas"></canvas>
+   </div>
+   <div id="aqi-container" class="w3-container w3-white">
    </div>
    <br>
    <br>
