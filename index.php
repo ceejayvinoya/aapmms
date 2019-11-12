@@ -15,7 +15,7 @@
         width: 60%;
         float: left;
         height: 360px;
-        margin: 25 auto;
+        margin: 25px;
         border: 3px solid blue;
       }
       body {
