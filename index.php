@@ -18,6 +18,7 @@
         height: 360px;
         margin: 25px;
         border: 3px solid blue;
+        background-color: white;
       }
       #aqi-container {
          width: 30%;
@@ -45,13 +46,13 @@
    <li class='last'><a href='about.html'><span>About</span></a></li>
 </ul>
 </div>
-<div class="w3-container">
+<div>
    <h2>Automated Air Pollution Monitoring and Mitigation System</h2>
    </div>
-<div id="chart-container" class="w3-container w3-white">
+<div id="chart-container">
    <canvas id="mycanvas"></canvas>
    </div>
-   <div id="aqi-container" class="w3-container w3-white">
+   <div id="aqi-container">
    </div>
    <br>
    <br>
