@@ -17,6 +17,7 @@
         position: relative;
         height: 360px;
         margin: 25px;
+        padding: 20px;
         border: 3px solid blue;
         background-color: white;
       }
@@ -26,6 +27,7 @@
          position: relative;
          height: 360px;
          margin: 25px;
+         padding: 20px;
          border: 3px solid green;
          background-color: white;
       }
@@ -54,6 +56,7 @@
    <canvas id="mycanvas"></canvas>
    </div>
    <div id="aqi-container">
+      <h2>AQI</h2>
    </div>
    <br>
    <br>
