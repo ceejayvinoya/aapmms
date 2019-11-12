@@ -13,8 +13,9 @@
    <style type="text/css">
       #chart-container {
         width: 60%;
+        float: left;
         height: 360px;
-        margin: auto;
+        margin: 25 auto;
         border: 3px solid blue;
       }
       body {
