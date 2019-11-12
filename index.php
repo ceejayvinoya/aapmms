@@ -56,7 +56,7 @@
    <canvas id="mycanvas"></canvas>
    </div>
    <div id="aqi-container">
-      <h2>AQI</h2>
+      <h2 style="color:blue;">MODERATE</h2>
    </div>
    <br>
    <br>
