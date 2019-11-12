@@ -27,6 +27,7 @@
          height: 360px;
          margin: 25px;
          border: 3px solid green;
+         background-color: white;
       }
       body {
         background-color: khaki;
