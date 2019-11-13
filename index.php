@@ -56,7 +56,18 @@
    <canvas id="mycanvas"></canvas>
    </div>
    <div id="aqi-container">
-      <h2 style="background-color:yellow;">MODERATE</h2>
+      <?php
+    //LOGIN TO MYSQL DATABASE
+         $servername = "ctgplw90pifdso61.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+         $username = "yfxtv65r19dk2qm0";
+         $password = "rkiww4updt427u90";
+         $database = "hu1al3cymer6fwfu";
+         $conn = new mysqli($servername, $username, $password, $database);
+         if($conn->connect_error){
+            die("</table> Connection Failed: " . $conn->connect_error);
+         }
+         echo "<h2 style='background-color:green;'>SAFE</h2>";
+      ?>
    </div>
    <br>
    <br>
