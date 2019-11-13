@@ -68,8 +68,8 @@
          }
          $sql="SELECT * FROM insensor ORDER BY id DESC LIMIT 1";
          $result=$conn->query($sql);
-         echo "<h2 style='background-color:light-green;'>SAFE</h2>";
-         echo "<h2 style='background-color:light-green;'>" . $row["apm25"] . "</h2>";
+         echo "<h2 style='background-color:chartreuse;'>SAFE</h2>";
+         echo "<h2 style='background-color:chartreuse;'>" . $row["apm25"]. "</h2>";
       ?>
    </div>
    <br>
