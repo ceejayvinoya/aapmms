@@ -66,11 +66,14 @@
          if($conn->connect_error){
             die("</table> Connection Failed: " . $conn->connect_error);
          }
+         echo "<h2 style='background-color:chartreuse;'>SAFE</h2>";
+         
          $sql="SELECT * FROM insensor ORDER BY id DESC LIMIT 1";
          $result=$conn->query($sql);
-         echo "<h2 style='background-color:chartreuse;'>SAFE</h2>";
-         while($row=$result->fetch_assoc()) {
-            echo "<h2 style='background-color:chartreuse;'>" . $row["apm25"]. "</h2>";
+         if($result->num_rows>0){
+            while($row=$result->fetch_assoc()) {
+               echo "<h2 style='background-color:chartreuse;'>" . $row["apm25"]. "</h2>";
+            }
          }
       ?>
    </div>
