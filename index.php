@@ -79,22 +79,27 @@
                   $aqi = 2.1 * ($row["apm25"] - 12.1) + 51;
                   echo "<h2 style='background-color:yellow;'>MODERATE</h2>";
                   echo "<h2 style='background-color:yellow;'>" . $aqi. "</h2>";
+                  echo "<p>Unusually sensitive people should consider reducing prolonged or heavy exertion.</p>";
                }else if($row["apm25"] > 35 && $row["apm25"] < 56){
                   $aqi = 2.46 * ($row["apm25"] - 35.5) + 101;
                   echo "<h2 style='background-color:orange;'>Unhealthy for Sensitive Groups</h2>";
                   echo "<h2 style='background-color:orange;'>" . $aqi. "</h2>";
+                  echo "<p>People with respiratory or heart disease, the elderly and children should limit prolonged exertion.</p>";
                }else if($row["apm25"] > 55 && $row["apm25"] < 151){
                   $aqi = 0.52 * ($row["apm25"] - 55.5) + 151;
                   echo "<h2 style='background-color:red;'>UNHEALTHY</h2>";
                   echo "<h2 style='background-color:red;'>" . $aqi. "</h2>";
+                  echo "<p>People with respiratory or heart disease, the elderly and children should avoid prolonged exertion; everyone else should limit prolonged exertion.</p>";
                }else if($row["apm25"] > 150 && $row["apm25"] < 251){
                   $aqi = ($row["apm25"] - 150.5) + 201;
                   echo "<h2 style='background-color:violet;'>VERY UNHEALTHY</h2>";
                   echo "<h2 style='background-color:violet;'>" . $aqi. "</h2>";
+                  echo "<p>People with respiratory or heart disease, the elderly and children should avoid any outdoor activity; everyone else should avoid prolonged exertion.</p>";
                }else{
                   $aqi = 0.67 * ($row["apm25"] - 350.5) + 401;
                   echo "<h2 style='background-color:brown;'>HAZARDOUS</h2>";
                   echo "<h2 style='background-color:brown;'>" . $aqi. "</h2>";
+                  echo "<p>Everyone should avoid any outdoor exertion; people with respiratory or heart disease, the elderly and children should remain indoors.</p>";
                }
             }
          }
