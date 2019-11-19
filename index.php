@@ -13,8 +13,8 @@
    <style type="text/css">
       #chart-container {
         width: 60%;
-        float: left;
-        position: relative;
+        display: inline-block;
+        
         height: 360px;
         margin: 25px;
         padding: 20px;
@@ -22,8 +22,8 @@
         background-color: white;
       }
       #aqi-container {
-         width: 20%;
-         position: relative;
+         width: 30%;
+         display: inline-block;
          height: 360px;
          margin: 25px;
          padding: 20px;
