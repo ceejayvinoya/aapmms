@@ -22,8 +22,7 @@
         background-color: white;
       }
       #aqi-container {
-         width: 30%;
-         float: right;
+         width: 20%;
          position: relative;
          height: 360px;
          margin: 25px;
