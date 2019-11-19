@@ -58,7 +58,7 @@
    <div id="aqi-container">
       <?php
     //LOGIN TO MYSQL DATABASE
-      while(true){
+      
          $servername = "ctgplw90pifdso61.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
          $username = "yfxtv65r19dk2qm0";
          $password = "rkiww4updt427u90";
@@ -104,8 +104,7 @@
                }
             }
          }
-      sleep(10);
-      }
+      
       ?>
    </div>
    <br>
