@@ -24,7 +24,7 @@
         background-color: white;
       }
       #aqi-container {
-         width: 30%;
+         width: 25%;
          overflow: hidden;
          height: 360px;
          margin: 25px;
