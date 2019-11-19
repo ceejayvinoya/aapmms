@@ -5,6 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="w3.css">
    <script type="text/javascript" src="jquery.min.js"></script>
    <script type="text/javascript" src="chart.min.js"></script>
    <script type="text/javascript" src="app.js"></script>
@@ -42,26 +43,32 @@
 </head>
 
 <body onLoad="buildHtmlTable()">
-
-<div id='cssmenu'>
-<ul>
-   <li class='active'><a href='#'><span>Home</span></a></li>
-   <li><a href='info.php'><span>Tables</span></a></li>
-   <li class='last'><a href='about.html'><span>About</span></a></li>
-</ul>
-</div>
-<div>
-   <h2>Automated Air Pollution Monitoring and Mitigation System</h2>
+   <div id='cssmenu'>
+      <ul>
+      <li class='active'><a href='#'><span>Home</span></a></li>
+      <li><a href='info.php'><span>Tables</span></a></li>
+      <li class='last'><a href='about.html'><span>About</span></a></li>
+      </ul>
+   </div>
+   <div>
+      <h2>Automated Air Pollution Monitoring and Mitigation System</h2>
    </div>
    <div id="wrapper">
-      
-<div id="chart-container">
-   <canvas id="mycanvas"></canvas>
-   </div>
-   <div id="aqi-container">
-      <div id="aqidiv">
+      <div id="chart-container">
+         <canvas id="mycanvas"></canvas>
       </div>
-   </div>
+      <div id="aqi-container">
+         <div id="aqidiv">
+         </div>
+      </div>
+      <div class="w3-container" style="position: relative">
+         <form method="get" style="display: inline-block">
+           <button class="w3-btn w3-lime" type="button" id="submit">Submit</button>
+         </form>
+         <form method="get" style="display: inline-block">
+            <button class="w3-btn w3-lime" type="button" id="refresh">Refresh</button>
+         </form>
+      </div>
    </div>
    <br>
    <br>
