@@ -62,10 +62,10 @@
          </div>
          <div class="w3-container" style="position: relative">
             <form method="get" style="display: inline-block">
-               <button class="w3-btn w3-lime" type="button" id="submit">Submit</button>
+               <button class="w3-btn w3-lime" type="button" id="pm25">PM 2.5</button>
             </form>
             <form method="get" style="display: inline-block">
-               <button class="w3-btn w3-lime" type="button" id="refresh">Refresh</button>
+               <button class="w3-btn w3-lime" type="button" id="aqi">AQI</button>
             </form>
          </div>
       </div>
