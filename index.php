@@ -11,10 +11,12 @@
    <script type="text/javascript" src="aqi.js"></script>
    <title>AAPMMS - DLSUD</title>
    <style type="text/css">
+      #wrapper{
+         overflow: hidden;
+      }
       #chart-container {
         width: 60%;
-        display: inline-block;
-        
+        float: left;
         height: 360px;
         margin: 25px;
         padding: 20px;
@@ -23,7 +25,7 @@
       }
       #aqi-container {
          width: 30%;
-         display: inline-block;
+         overflow: hidden;
          height: 360px;
          margin: 25px;
          padding: 20px;
@@ -51,12 +53,15 @@
 <div>
    <h2>Automated Air Pollution Monitoring and Mitigation System</h2>
    </div>
+   <div id="wrapper">
+      
 <div id="chart-container">
    <canvas id="mycanvas"></canvas>
    </div>
    <div id="aqi-container">
       <div id="aqidiv">
       </div>
+   </div>
    </div>
    <br>
    <br>
