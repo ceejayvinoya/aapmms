@@ -36,7 +36,7 @@ $.ajax({
       var ctx = $("#mycanvas");
 
       var maxapm = Math.max(...apm25);
-      var minapm = Math.min(...apm25);
+      var minbpm = Math.min(...bpm25);
         
       var barGraph = new Chart(ctx, {
         type: 'line',
@@ -55,7 +55,7 @@ $.ajax({
             scales: {
                     yAxes: [{
                         ticks: {
-                            min: minapm, max: maxapm
+                            min: minbpm, max: maxapm
                         }
                     }]
             }
