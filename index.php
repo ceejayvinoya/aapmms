@@ -10,7 +10,6 @@
    <script type="text/javascript" src="chart.min.js"></script>
    <script type="text/javascript" src="app.js"></script>
    <script type="text/javascript" src="aqi.js"></script>
-   <script type="text/javascript" src="pm25.js"></script>
    <title>AAPMMS - DLSUD</title>
    <style type="text/css">
       #wrapper{
@@ -25,7 +24,7 @@
         border: 3px solid blue;
         background-color: white;
       }
-      #aqi-container {
+      #aqidiv {
          width: 25%;
          overflow: hidden;
          height: 360px;
@@ -58,14 +57,8 @@
       <div id="chart-container">
          <canvas id="mycanvas"></canvas>
       </div>
-      <div id="aqi-container">
-         <div id="aqidiv">
-         </div>
-         <div class="w3-container" style="position: relative">
-            <form method="get" style="display: inline-block">
-               <button class="w3-btn w3-lime" type="button" id="submit">PM 2.5</button>
-            </form>
-         </div>
+      <div id="aqidiv">
+         
       </div>
    </div>
    <br>
