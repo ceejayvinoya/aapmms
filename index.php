@@ -10,6 +10,7 @@
    <script type="text/javascript" src="chart.min.js"></script>
    <script type="text/javascript" src="app.js"></script>
    <script type="text/javascript" src="aqi.js"></script>
+   <script type="text/javascript" src="pm25.js"></script>
    <title>AAPMMS - DLSUD</title>
    <style type="text/css">
       #wrapper{
