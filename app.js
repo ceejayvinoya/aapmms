@@ -14,6 +14,16 @@ $.ajax({
         time.push(data[i].Timestamp);
       }
 
+      if(apm25[19] < 55){
+          for(j = 0; j < 19; j++){
+              if(apm25[j] > 55){
+                  apm25.splice(j, 1);
+                  bpm25.splice(j, 1);
+              }
+          
+          }
+      }
+        
       var chartdata = {
         labels: time,
         datasets : [
@@ -39,15 +49,6 @@ $.ajax({
       var minbpm = Math.min(...bpm25);
         
       var j;
-        
-      if(apm25[19]<55){
-          for(j = 0; j < 19; j++){
-              if(apm25[j] > 55){
-                  apm25.splice(j, 1);
-              }
-          
-          }
-      }
         
       var barGraph = new Chart(ctx, {
         type: 'line',
