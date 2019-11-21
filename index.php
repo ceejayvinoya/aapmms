@@ -15,7 +15,19 @@
       #wrapper{
          overflow: hidden;
       }
-     
+     @media screen and (max-width: 600px) {
+         #chart-container {
+            display: none;
+        width: 60%;
+        float: left;
+        height: 360px;
+        margin: 25px;
+        padding: 20px;
+        border: 3px solid blue;
+        background-color: white;
+      }
+      
+      }
       #chart-container {
         width: 60%;
         float: left;
