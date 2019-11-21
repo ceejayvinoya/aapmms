@@ -26,7 +26,16 @@
         border: 3px solid blue;
         background-color: white;
       }
-      
+      #aqidiv {
+         width: 80%;
+         
+         overflow: hidden;
+         height: 360px;
+         margin: 25px;
+         padding: 20px;
+         border: 3px solid green;
+         background-color: white;
+      }
       }
       #chart-container {
         width: 60%;
