@@ -18,9 +18,9 @@
       @media screen and (max-width: 600px) {
          #chart-container {
          visibility: hidden;
-         width: 0%;
+         width: 0px;
          float: left;
-         height: 360px;
+         height: 0px;
          margin: 0px;
          padding: 0px;
         
@@ -28,7 +28,7 @@
       }
       @media screen and (max-width: 600px) {
          #aqidiv {
-         width: 90%;
+         
          float: left;
          border: 3px solid green;
          background-color: white;
