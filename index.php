@@ -18,25 +18,12 @@
       @media screen and (max-width: 600px) {
          #chart-container {
          visibility: hidden;
-         width: 0px;
-         float: left;
-         height: 0px;
-         margin: 0px;
-         padding: 0px;
-        
-         }
-      }
-      @media screen and (max-width: 600px) {
-         #aqidiv {
          
-         float: left;
-         border: 3px solid green;
-         background-color: white;
          }
       }
       #chart-container {
         width: 60%;
-        float: left;
+        
         height: 360px;
         margin: 25px;
         padding: 20px;
@@ -45,6 +32,7 @@
       }
       #aqidiv {
          width: 25%;
+         float: left;
          overflow: hidden;
          height: 360px;
          margin: 25px;
@@ -73,12 +61,13 @@
       <h2>Automated Air Pollution Monitoring and Mitigation System</h2>
    </div>
    <div id="wrapper">
-      <div id="chart-container">
-         <canvas id="mycanvas"></canvas>
-      </div>
       <div id="aqidiv">
          
       </div>
+      <div id="chart-container">
+         <canvas id="mycanvas"></canvas>
+      </div>
+      
    </div>
    <br>
    <br>
