@@ -18,6 +18,12 @@
       @media screen and (max-width: 600px) {
          #chart-container {
          visibility: hidden;
+         width: 0%;
+         float: left;
+         height: 360px;
+         margin: 0px;
+         padding: 0px;
+        
          }
          #aqidiv {
          width: 90%;
