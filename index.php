@@ -15,6 +15,11 @@
       #wrapper{
          overflow: hidden;
       }
+      @media screen and (max-width: 600px) {
+         #chart-container {
+         visibility: hidden;
+         }
+      }
       #chart-container {
         width: 60%;
         float: left;
