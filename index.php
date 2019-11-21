@@ -25,15 +25,14 @@
          padding: 0px;
         
          }
+      }
+      @media screen and (max-width: 600px) {
          #aqidiv {
          width: 90%;
-         overflow: hidden;
-         height: 360px;
-         margin: 25px;
-         padding: 20px;
+         float: left;
          border: 3px solid green;
          background-color: white;
-      }
+         }
       }
       #chart-container {
         width: 60%;
