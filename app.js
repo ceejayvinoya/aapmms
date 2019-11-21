@@ -14,14 +14,15 @@ $.ajax({
         time.push(data[i].Timestamp);
       }
 
-       var num = Number(apm25[19]);
+       var num = Math.round(apm25[0]);
         
         if(num < 55){
-       for(var q = 0; q < apm25.length-1; q++){
-           var qwe = Number(apm25[q]);
+       for(var q = 1; q < apm25.length-1; q++){
+           var qwe = Math.round(apm25[q]);
            if ( qwe > 55) {
                apm25.splice(q, 1);
                bpm25.splice(q, 1);
+               time.splice(q, 1);
            }
        }
         }
