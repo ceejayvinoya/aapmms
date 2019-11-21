@@ -13,10 +13,13 @@ $.ajax({
         bpm25.push(data[i].Outgoing);
         time.push(data[i].Timestamp);
       }
+
+       var num = Number(apm25[19]);
         
-        if(apm25[19] < 55){
+        if(num < 55){
        for( var i = apm25.length-1; i--;){
-           if ( apm25[i] > 55) {
+           var qwe = Number(apm25[i]);
+           if ( qwe > 55) {
                apm25.splice(i, 1);
                bpm25.splice(i, 1);
            }
