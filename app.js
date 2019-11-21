@@ -17,11 +17,11 @@ $.ajax({
        var num = Number(apm25[19]);
         
         if(num < 55){
-       for( var i = apm25.length-1; i--;){
-           var qwe = Number(apm25[i]);
+       for(var q = 0; q < apm25.length-1; q++){
+           var qwe = Number(apm25[q]);
            if ( qwe > 55) {
-               apm25.splice(i, 1);
-               bpm25.splice(i, 1);
+               apm25.splice(q, 1);
+               bpm25.splice(q, 1);
            }
        }
         }
@@ -50,7 +50,7 @@ $.ajax({
       var maxapm = Math.max(...apm25);
       var minbpm = Math.min(...bpm25);
         
-      var j;
+      
         
       var barGraph = new Chart(ctx, {
         type: 'line',
