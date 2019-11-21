@@ -18,7 +18,7 @@
      @media screen and (max-width: 600px) {
          #chart-container {
             display: none;
-        width: 60%;
+        width: 0%;
         float: left;
         height: 360px;
         margin: 25px;
