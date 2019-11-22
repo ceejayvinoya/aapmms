@@ -16,7 +16,7 @@
          overflow: hidden;
       }
       #chart-container {
-        width: 60%;
+        width: 720px;
         float: left;
         height: 360px;
         margin: 25px;
@@ -25,7 +25,7 @@
         background-color: white;
       }
       #aqidiv {
-         width: 25%;
+         width: 240px;
          
          overflow: hidden;
          height: 360px;
