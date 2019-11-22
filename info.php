@@ -9,7 +9,7 @@
    <link rel="stylesheet" href="w3.css">
    <script src="jquery.min.js" type="text/javascript"></script>
    <script src="infoscript.js"></script>
-   
+   <script src="inforefresh.js"></script>
    <title>AAPMMS - DLSUD</title>
 </head>
    
