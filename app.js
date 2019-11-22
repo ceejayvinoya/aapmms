@@ -13,19 +13,6 @@ $.ajax({
         bpm25.push(data[i].Outgoing);
         time.push(data[i].Timestamp);
       }
-
-       var num = Math.round(apm25[0]);
-        
-        if(num < 55){
-       for(var q = 1; q < apm25.length-1; q++){
-           var qwe = Math.round(apm25[q]);
-           if ( qwe > 55) {
-               apm25.splice(q, 1);
-               bpm25.splice(q, 1);
-               time.splice(q, 1);
-           }
-       }
-        }
         
       var chartdata = {
         labels: time,
@@ -85,5 +72,5 @@ $.ajax({
 
 $(document).ready(function(){
     fetchdata();
-    setInterval(fetchdata, 10000);
+    setInterval(fetchdata, 5000);
 });
