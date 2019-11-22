@@ -16,7 +16,7 @@
          overflow: hidden;
       }
       #chart-container {
-        width: 720px;
+        width: 600px;
         float: left;
         height: 360px;
         margin: 25px;
