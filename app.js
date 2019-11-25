@@ -18,13 +18,13 @@ $.ajax({
         labels: time,
         datasets : [
           {
-            label: 'Incoming Air (ug/m3)',
+            label: 'Incoming (ug/m3)',
             fill: false,
             backgroundColor: 'rgba(243, 18, 156 , 1)',
             borderColor: 'rgba(243, 18, 156 , 1)',
             data: apm25
           },{
-                label: 'Outgoing Air (ug/m3)',
+                label: 'Outgoing (ug/m3)',
                 fill: false,  //Try with true
                 backgroundColor: 'rgba( 243, 156, 18 , 1)', //Dot marker color
                 borderColor: 'rgba( 243, 156, 18 , 1)', //Graph Line Color
